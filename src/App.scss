@@ -1,5 +1,14 @@
+@import "./style/theme";
+
+$App-bg-color: #FAFAF5;
+
 .App {
+  height: 100%;
+
   text-align: center;
+  background-color: $App-bg-color;
+
+  padding: 80px;
 }
 
 .App-logo {
@@ -16,9 +25,4 @@
 
 .App-intro {
   font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

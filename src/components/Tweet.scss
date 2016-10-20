@@ -1,0 +1,51 @@
+.Tweet {
+  .tweet {
+    background-color: transparent!important;
+    border-bottom: none !important;
+  }
+
+  .tweet-timestamp,
+  .tweet .footer {
+    display: none !important;
+  }
+
+  * {
+    font-family: 'brandon-grotesque' !important;
+  }
+}
+
+.Tweet.large {
+  .content {
+    margin-left: 210px !important;
+  }
+
+  .avatar {
+    width: 200px !important;
+    height: 200px !important;
+    margin-left: -210px !important;
+  }
+
+  .fullname,
+  .username {
+    font-size: 2em !important;
+    line-height: 1.3em !important;
+  }
+
+  .tweet-text {
+    font-size: 3em !important;
+    line-height: 1.2em !important;
+  }
+}
+
+.Tweet:not(.large) {
+  .fullname,
+  .username {
+    font-size: 1.3em !important;
+    line-height: 1.3em !important;
+  }
+
+  .tweet-text {
+    font-size: 1.8em !important;
+    line-height: 1.2em !important;
+  }
+}

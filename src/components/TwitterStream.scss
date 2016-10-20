@@ -1,0 +1,13 @@
+.TwitterStream {
+  display: flex;
+  flex-direction: row;
+}
+
+.TwitterStream-highlight {
+  flex-basis: 80%;
+}
+
+.TwitterStream-older {
+  flex-basis: 20%;
+  overflow: hidden;
+}

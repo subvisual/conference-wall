@@ -1,0 +1,29 @@
+$font-family: 'brandon-grotesque';
+
+html,
+body,
+#root {
+  height: 100%;
+
+  min-height: 100%;
+   font-family: $font-family;
+}
+
+.wf-active,
+button {
+  // font-family: $font-family;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
