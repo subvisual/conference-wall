@@ -5,7 +5,14 @@ import './style/Stitches.scss';
 import './style/Flex.scss';
 import './style/utilities.scss';
 
-import TwitterStreamContainer from './components/TwitterStream';
+import Wall from './components/Wall';
+
+let server;
+if (process.env.NODE_ENV === "production") {
+  server = 'rubyconfpt-wall-server.herokuapp.com:80';
+} else {
+  server = 'localhost:4000';
+}
 
 class App extends Component {
   render() {
@@ -16,7 +23,9 @@ class App extends Component {
         <div className="Stitches red left" />
         <div className="Stitches red right" />
 
-        <TwitterStreamContainer />
+        <Wall
+          twitterStreamServer={server}
+        />
       </div>
     );
   }

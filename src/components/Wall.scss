@@ -1,0 +1,24 @@
+.Wall {
+  display: flex;
+  flex-direction: row;
+
+  overflow: hidden;
+}
+
+.Wall-main {
+  flex-basis: 70%;
+  padding-right: 50px;
+}
+
+.Wall-logo {
+  padding-bottom: 60px;
+
+  img {
+    height: 90px;
+  }
+}
+
+.Wall-sidebar {
+  flex-basis: 30%;
+  overflow: hidden;
+}

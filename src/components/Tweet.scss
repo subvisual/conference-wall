@@ -16,36 +16,64 @@
 
 .Tweet.large {
   .content {
-    margin-left: 210px !important;
+    margin-left: 190px !important;
   }
 
   .avatar {
-    width: 200px !important;
-    height: 200px !important;
-    margin-left: -210px !important;
+    width: 150px !important;
+    height: 150px !important;
+    margin-left: -190px !important;
   }
 
   .fullname,
   .username {
-    font-size: 2em !important;
+    font-size: 42px !important;
     line-height: 1.3em !important;
   }
 
   .tweet-text {
-    font-size: 3em !important;
+    padding-top: 20px !important;
+    font-size: 42px !important;
     line-height: 1.2em !important;
+  }
+
+  .emoji {
+    height: 40px !important;
+  }
+
+  .AdaptiveMedia-photoContainer {
+    max-height: 300px !important;
+
+    img {
+      max-height: 300px !important;
+    }
   }
 }
 
 .Tweet:not(.large) {
+  margin-bottom: 20px;
+
   .fullname,
   .username {
-    font-size: 1.3em !important;
+    font-size: 24px !important;
     line-height: 1.3em !important;
   }
 
   .tweet-text {
-    font-size: 1.8em !important;
+    font-size: 28px !important;
     line-height: 1.2em !important;
+  }
+
+  .emoji {
+    height: 20px !important;
+  }
+
+  .AdaptiveMedia-photoContainer {
+    max-height: 100px !important;
+
+    img {
+      width: auto !important;
+      max-height: 100px !important;
+    }
   }
 }

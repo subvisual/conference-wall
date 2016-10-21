@@ -1,8 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import ReactTweet from 'react-tweet'
-import './TwitterStream.scss';
+
+import _ from 'lodash';
+
 import './Tweet.scss';
-import '../style/Flex.scss';
 
 export default class Tweet extends Component {
   static propTypes = {
@@ -15,15 +16,22 @@ export default class Tweet extends Component {
     modifier: ""
   }
 
+  data = () => {
+    const result = this.props.tweet;
+    console.log(this.props.tweet);
+    result.user.profile_image_url = result.user.profile_image_url.replace('_normal', '');
+    return result;
+  }
+
   render() {
     const classes = `Tweet ${this.props.modifier} u-relative`;
 
     if (this.props.tweet) {
       return <div className={classes}>
-        <ReactTweet className={this.props.modifier} data={this.props.tweet} />;
-      </div>;
+        <ReactTweet className={this.props.modifier} data={this.data()} />
+      </div>
     } else {
-      return <span />;
+      return <span />
     }
   }
 }

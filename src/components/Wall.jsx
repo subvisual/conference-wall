@@ -1,18 +1,22 @@
 import io from 'socket.io-client';
 import React, { Component, PropTypes } from 'react';
 
+import './Wall.scss';
+
 import Tweet from './Tweet';
 
 import _ from 'lodash';
 
-export default class TwitterStream extends Component {
+export default class Wall extends Component {
   static propTypes = {
     hashtags: PropTypes.array,
-    children: PropTypes.node
+    children: PropTypes.node,
+    server: PropTypes.string,
   }
 
   static defaultProps = {
-    hashtags: ['rubyconfpt']
+    hashtags: ['rubyconfpt'],
+    twitterStreamServer: 'localhost:4000',
   }
 
   constructor(props) {
@@ -26,7 +30,7 @@ export default class TwitterStream extends Component {
 
   componentDidMount() {
     this.setState(() => {
-      const socket = io.connect('rubyconfpt-wall-server.herokuapp.com:4000', { query: this.hashtags })
+      const socket = io.connect(this.props.twitterStreamServer, { query: this.hashtags })
       socket.on('tweet', this.onTweet);
       return { socket };
     });
@@ -45,7 +49,7 @@ export default class TwitterStream extends Component {
   }
 
   onTweet = tweet => {
-    this.setState({ tweets: _.take([tweet, ...this.state.tweets], 5) })
+    this.setState({ tweets: _.take([tweet, ...this.state.tweets], 10) })
   };
 
   highlightedTweet = () => {
@@ -58,14 +62,24 @@ export default class TwitterStream extends Component {
     );
   }
 
+  announcement = () => {
+
+  }
+
   render() {
-    return <div className="TwitterStream">
-      <div className="TwitterStream-highlight">
-        {this.highlightedTweet()}
+    return <div className="Wall">
+      <div className="Wall-main">
+        <div className="Wall-logo">
+          <img src="/images/logo.png" />
+        </div>
+        <div className="Wall-highlight">
+          {this.highlightedTweet()}
+        </div>
       </div>
-      <div className="TwitterStream-older">
+      <div className="Wall-sidebar">
         {this.olderTweets()}
       </div>
+      {this.announcement()}
     </div>;
   }
 }
