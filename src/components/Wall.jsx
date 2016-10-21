@@ -31,6 +31,7 @@ export default class Wall extends Component {
   componentDidMount() {
     this.setState(() => {
       const socket = io.connect(this.props.twitterStreamServer, { query: this.hashtags })
+      socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
       socket.on('tweet', this.onTweet);
       return { socket };
     });
@@ -70,7 +71,7 @@ export default class Wall extends Component {
     return <div className="Wall">
       <div className="Wall-main">
         <div className="Wall-logo">
-          <img src="/images/logo.png" />
+          <img src="/images/logo.png" alt="RubyConf PT logo" />
         </div>
         <div className="Wall-highlight">
           {this.highlightedTweet()}
