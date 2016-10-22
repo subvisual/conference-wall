@@ -1,0 +1,11 @@
+.Announcement {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Announcement-talk,
+.Announcement-tweet {
+  max-width: 70%;
+}

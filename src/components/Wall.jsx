@@ -65,7 +65,7 @@ export default class Wall extends Component {
   }
 
   announcementTweet = () => {
-
+    return _.head(this.state.tweets);
   }
 
   render() {

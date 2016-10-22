@@ -90,3 +90,30 @@
     margin: 20px 0;
   }
 }
+
+.Tweet.announcement {
+  .avatar {
+    width: 150px !important;
+    height: 150px !important;
+    margin-left: -190px !important;
+  }
+
+  .fullname,
+  .username {
+    display: none !important;
+  }
+
+  .tweet-text {
+    padding-top: 0px !important;
+    font-size: 42px !important;
+    line-height: 1.2em !important;
+  }
+
+  .emoji {
+    height: 40px !important;
+  }
+
+  .AdaptiveMedia {
+    display: none;
+  }
+}
