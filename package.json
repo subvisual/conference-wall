@@ -38,6 +38,7 @@
     "jest": "15.1.1",
     "json-loader": "0.5.4",
     "lodash": "^4.16.4",
+    "moment": "^2.15.1",
     "node-sass": "^3.10.1",
     "node-tweet-stream": "^2.0.1",
     "nodemon": "^1.11.0",
@@ -57,7 +58,8 @@
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.13.2"
+    "webpack": "1.13.2",
+    "yaml-loader": "^0.4.0"
   },
   "scripts": {
     "start": "node scripts/start.js",

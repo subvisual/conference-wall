@@ -1,0 +1,171 @@
+- name: Day 1
+  date: Thursday, October 27th
+  events:
+    - name: Check-in
+      start: "8:30"
+      end: "9:15"
+
+    - name: Opening
+      start: "9:15"
+      end: "9:30"
+
+    - name: talk
+      start: "9:30"
+      end: "10:30"
+      type: talk
+      speaker: martinfowler
+
+    - name: Coffee Break
+      start: "10:30"
+      end: "11:00"
+      type: coffee-break
+
+    - name: talk
+      start: "11:00"
+      end: "11:40"
+      type: talk
+      speaker: kwugirl
+
+    - name: Break
+      start: "11:40"
+      end: "12:00"
+      type: break
+
+    - name: talk
+      start: "12:00"
+      end: "12:40"
+      type: talk
+      speaker: chastell
+
+    - name: Lunch
+      start: "12:40"
+      end: "14:30"
+
+    - name: "Lightning Talks Part 1"
+      start: "14:30"
+      end: "15:00"
+      type: talk
+
+    - name: talk
+      start: "15:00"
+      end: "15:40"
+      speaker: josemotanet
+      type: talk
+
+    - name: Break
+      start: "15:40"
+      end: "16:00"
+      type: break
+
+    - name: talk
+      start: "16:00"
+      end: "16:40"
+      type: talk
+      speaker: pragtob
+
+    - name: Coffee Break
+      start: "16:40"
+      end: "17:00"
+      type: coffee-break
+
+    - name: "Rails Girls Summer of Code: Falling into Rabbit Holes"
+      start: "17:00"
+      end: "17:40"
+      type: talk
+      speaker: girls
+      rails_girls: true
+
+    - name: Break
+      start: "17:40"
+      end: "18:00"
+      type: break
+
+    - name: Panel
+      start: "18:00"
+      end: "19:00"
+      type: talk
+
+    - name: Karaoke Party
+      start: "19:30"
+      end: "02:00"
+      type: party
+      sponsor: Red Light
+      location: Barhaus
+      url: https://www.google.pt/maps/place/Barhaus/@41.5487655,-8.428981,17z/data=!3m1!4b1!4m5!3m4!1s0xd24fec2fefbe72f:0x6e47cb947142182a!8m2!3d41.5487615!4d-8.4267923?hl=en
+
+- name: Day 2
+  date: Friday, October 28th
+  events:
+    - name: Check-in
+      start: "9:00"
+      end: "10:00"
+
+    - name: talk
+      start: "10:00"
+      end: "10:40"
+      speaker: wycats
+      type: talk
+
+    - name: Coffee Break
+      start: "10:40"
+      end: "11:00"
+      type: break
+
+    - name: talk
+      start: "11:00"
+      end: "11:40"
+      speaker: hiro_asari
+      type: talk
+
+    - name: Break
+      start: "11:40"
+      end: "12:00"
+      type: break
+
+    - name: talk
+      start: "12:00"
+      end: "12:40"
+      type: talk
+      speaker: pat
+
+    - name: Lunch
+      start: "12:40"
+      end: "14:30"
+
+    - name: "Lightning Talks Part 2"
+      start: "14:30"
+      end: "15:00"
+      type: talk
+
+    - name: talk
+      start: "15:00"
+      end: "15:40"
+      type: talk
+      speaker: caiosba
+
+    - name: Break
+      start: "15:40"
+      end: "16:00"
+      type: break
+
+    - name: talk
+      start: "16:00"
+      end: "16:40"
+      type: talk
+      speaker: kerrizor
+
+    - name: Coffee Break
+      start: "16:40"
+      end: "17:00"
+      type: break
+
+    - name: talk
+      start: "17:00"
+      end: "17:40"
+      type: talk
+      speaker: tenderlove
+
+    - name: Closing
+      start: "17:40"
+      end: "18:00"
+      type: break
