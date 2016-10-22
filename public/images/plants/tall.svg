@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="156px" height="480px" viewBox="0 0 156 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>second</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E98D8C" offset="0%"></stop>
+            <stop stop-color="#CE6261" offset="100%"></stop>
+        </linearGradient>
+        <path d="M37.4571429,15.1984261 C36.9433243,14.7643745 21.0500533,1.51042837 11.9387297,14.9953405 C2.8227571,28.4871333 36.385666,60.4031888 37.4443696,61.4044553 L37.4443696,61.4285714 C37.4443696,61.4285714 37.4486634,61.4245327 37.4571429,61.4165263 C37.4656224,61.4245327 37.4699162,61.4285714 37.4699162,61.4285714 L37.4699162,61.4044553 C38.5286198,60.4031888 72.0915286,28.4871333 62.975556,14.9953405 C53.8642325,1.51042837 37.9709614,14.7643745 37.4571429,15.1984261 Z" id="path-2"></path>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="54.1727915" height="52.4704935" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#2EEEA9" offset="0%"></stop>
+            <stop stop-color="#18BD69" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#83EBAF" offset="0%"></stop>
+            <stop stop-color="#39D26C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="94.9600563%" y1="29.0333681%" x2="4.76653607%" y2="68.8462991%" id="linearGradient-6">
+            <stop stop-color="#E98D8C" offset="0%"></stop>
+            <stop stop-color="#CE6261" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="83.5864616%" y1="13.6776892%" x2="16.1101429%" y2="74.0886106%" id="linearGradient-7">
+            <stop stop-color="#FEF57B" offset="0%"></stop>
+            <stop stop-color="#F8E02D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.7301779%" y1="23.5278994%" x2="91.9662671%" y2="66.7552075%" id="linearGradient-8">
+            <stop stop-color="#FEF57B" offset="0%"></stop>
+            <stop stop-color="#F8E02D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-9">
+            <stop stop-color="#F8A3CC" offset="0%"></stop>
+            <stop stop-color="#ED6A9C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#48D0F9" offset="0%"></stop>
+            <stop stop-color="#2AA7F0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-11">
+            <stop stop-color="#48D0F9" offset="0%"></stop>
+            <stop stop-color="#2AA7F0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-12">
+            <stop stop-color="#48D0F9" offset="0%"></stop>
+            <stop stop-color="#2AA7F0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-13">
+            <stop stop-color="#48D0F9" offset="0%"></stop>
+            <stop stop-color="#2AA7F0" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="65.7008045%" id="radialGradient-14">
+            <stop stop-color="#F8E02D" offset="0%"></stop>
+            <stop stop-color="#FDF57B" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-15">
+            <stop stop-color="#E98D8C" offset="0%"></stop>
+            <stop stop-color="#CE6261" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-16">
+            <stop stop-color="#E98D8C" offset="0%"></stop>
+            <stop stop-color="#CE6261" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-17">
+            <stop stop-color="#E98D8C" offset="0%"></stop>
+            <stop stop-color="#CE6261" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-18">
+            <stop stop-color="#F8A3CC" offset="0%"></stop>
+            <stop stop-color="#ED6A9C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-19">
+            <stop stop-color="#F8A3CC" offset="0%"></stop>
+            <stop stop-color="#ED6A9C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-20">
+            <stop stop-color="#F8A3CC" offset="0%"></stop>
+            <stop stop-color="#ED6A9C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="48.2472681%" y2="100%" id="linearGradient-21">
+            <stop stop-color="#F9BD54" offset="0%"></stop>
+            <stop stop-color="#F0882A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-22">
+            <stop stop-color="#F9BD54" offset="0%"></stop>
+            <stop stop-color="#F0882A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-23">
+            <stop stop-color="#F9BD54" offset="0%"></stop>
+            <stop stop-color="#F0882A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-24">
+            <stop stop-color="#F9BD54" offset="0%"></stop>
+            <stop stop-color="#F0882A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Anim-ticketBranches" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="second" transform="translate(0.000000, -2.000000)">
+            <g id="hearts" transform="translate(39.000000, 412.000000)">
+                <g id="heartWrapper2">
+                    <rect id="heartPlaceholder2" fill-opacity="0" fill="#D8D8D8" x="-2.84217094e-14" y="0" width="75" height="70"></rect>
+                    <g id="stiches2" transform="translate(-0.000000, 0.000000)" fill="url(#linearGradient-1)">
+                        <ellipse id="Oval-2525" transform="translate(20.314286, 7.142857) scale(-1, 1) translate(-20.314286, -7.142857) " cx="20.3142857" cy="7.14285714" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" transform="translate(10.314286, 12.857143) scale(-1, 1) translate(-10.314286, -12.857143) " cx="10.3142857" cy="12.8571429" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" transform="translate(7.457143, 24.285714) scale(-1, 1) translate(-7.457143, -24.285714) " cx="7.45714286" cy="24.2857143" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" transform="translate(11.742857, 35.714286) scale(-1, 1) translate(-11.742857, -35.714286) " cx="11.7428571" cy="35.7142857" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" transform="translate(18.885714, 45.714286) scale(-1, 1) translate(-18.885714, -45.714286) " cx="18.8857143" cy="45.7142857" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" transform="translate(27.457143, 55.714286) scale(-1, 1) translate(-27.457143, -55.714286) " cx="27.4571429" cy="55.7142857" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <circle id="Oval-2525" transform="translate(31.742857, 10.000000) scale(-1, 1) translate(-31.742857, -10.000000) " cx="31.7428571" cy="10" r="7.14285714"></circle>
+                        <ellipse id="Oval-2525" transform="translate(43.171429, 10.000000) scale(-1, 1) translate(-43.171429, -10.000000) " cx="43.1714286" cy="10" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" transform="translate(54.600000, 7.142857) scale(-1, 1) translate(-54.600000, -7.142857) " cx="54.6" cy="7.14285714" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" cx="64.6" cy="12.8571429" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" cx="67.4571429" cy="24.2857143" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" cx="63.1714286" cy="35.7142857" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" cx="56.0285714" cy="45.7142857" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" cx="47.4571429" cy="55.7142857" rx="7.14285714" ry="7.14285714"></ellipse>
+                        <ellipse id="Oval-2525" cx="37.4571429" cy="62.8571429" rx="7.14285714" ry="7.14285714"></ellipse>
+                    </g>
+                    <path d="M37.4571429,12.9190978 C36.9123273,12.4672698 20.8064812,-0.691060297 10.6906521,14.2805371 C0.565250961,29.2663011 36.2917794,63.1728127 37.4429503,64.2589845 L37.4429503,64.2857143 C37.4429503,64.2857143 37.4477223,64.281238 37.4571429,64.2723647 C37.4665635,64.281238 37.4713354,64.2857143 37.4713354,64.2857143 L37.4713354,64.2589845 C38.6225064,63.1728127 74.3490348,29.2663011 64.2236336,14.2805371 C54.1078045,-0.691060297 38.0019584,12.4672698 37.4571429,12.9190978 Z" id="cut2" fill="#FFFFFF" transform="translate(37.457143, 35.714286) scale(-1, 1) translate(-37.457143, -35.714286) "></path>
+                    <use id="cutBorder2" stroke="url(#linearGradient-1)" mask="url(#mask-3)" stroke-width="3" transform="translate(37.457143, 35.193325) scale(-1, 1) translate(-37.457143, -35.193325) " xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="leafs" transform="translate(21.000000, 0.000000)">
+                <g id="leafWrapper13" transform="translate(89.500000, 17.000000) rotate(-200.000000) translate(-89.500000, -17.000000) translate(83.000000, 2.000000)">
+                    <rect id="leafPlaceholder13" fill-opacity="0" fill="#D8D8D8" x="4.26325641e-14" y="1.3500312e-13" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,1.88293825e-13 6.5,1.88293825e-13 C6.5,1.88293825e-13 4.26325641e-14,6.71572875 4.26325641e-14,15 C4.26325641e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf13" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper12" transform="translate(90.500000, 60.000000) rotate(-100.000000) translate(-90.500000, -60.000000) translate(84.000000, 45.000000)">
+                    <rect id="leafPlaceholder12" fill-opacity="0" fill="#D8D8D8" x="2.84217094e-14" y="1.84741111e-13" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,2.38031816e-13 6.5,2.38031816e-13 C6.5,2.38031816e-13 2.84217094e-14,6.71572875 2.84217094e-14,15 C2.84217094e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf12" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper11" transform="translate(96.500000, 87.000000) scale(1, -1) rotate(-20.000000) translate(-96.500000, -87.000000) translate(90.000000, 72.000000)">
+                    <rect id="leafPlaceholder11" fill-opacity="0" fill="#D8D8D8" x="0" y="1.77635684e-13" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,2.30926389e-13 6.5,2.30926389e-13 C6.5,2.30926389e-13 0,6.71572875 0,15 C0,23.2842712 6.5,30 6.5,30 Z" id="leaf11" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper10" transform="translate(44.500000, 102.000000) rotate(-250.000000) translate(-44.500000, -102.000000) translate(38.000000, 87.000000)">
+                    <rect id="leafPlaceholder10" fill-opacity="0" fill="#D8D8D8" x="2.84217094e-14" y="9.9475983e-14" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,1.52766688e-13 6.5,1.52766688e-13 C6.5,1.52766688e-13 2.84217094e-14,6.71572875 2.84217094e-14,15 C2.84217094e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf10" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper9" transform="translate(89.500000, 122.000000) rotate(-40.000000) translate(-89.500000, -122.000000) translate(83.000000, 107.000000)">
+                    <rect id="leafPlaceholder9" fill-opacity="0" fill="#D8D8D8" x="3.55271368e-14" y="1.98951966e-13" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,2.52242671e-13 6.5,2.52242671e-13 C6.5,2.52242671e-13 3.55271368e-14,6.71572875 3.55271368e-14,15 C3.55271368e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf9" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper8" transform="translate(72.500000, 171.000000) scale(-1, 1) rotate(-230.000000) translate(-72.500000, -171.000000) translate(66.000000, 156.000000)">
+                    <rect id="leafPlaceholder8" fill-opacity="0" fill="#D8D8D8" x="-2.84217094e-14" y="-5.68434189e-14" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,-3.55271368e-15 6.5,-3.55271368e-15 C6.5,-3.55271368e-15 -2.84217094e-14,6.71572875 -2.84217094e-14,15 C-2.84217094e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf8" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper7" transform="translate(30.500000, 172.000000) rotate(-300.000000) translate(-30.500000, -172.000000) translate(24.000000, 157.000000)">
+                    <rect id="leafPlaceholder7" fill-opacity="0" fill="#D8D8D8" x="2.84217094e-14" y="7.81597009e-14" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,1.31450406e-13 6.5,1.31450406e-13 C6.5,1.31450406e-13 2.84217094e-14,6.71572875 2.84217094e-14,15 C2.84217094e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf7" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper6" transform="translate(13.500000, 307.000000) rotate(-330.000000) translate(-13.500000, -307.000000) translate(7.000000, 292.000000)">
+                    <rect id="leafPlaceholder6" fill-opacity="0" fill="#D8D8D8" x="2.84217094e-14" y="5.68434189e-14" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,1.10134124e-13 6.5,1.10134124e-13 C6.5,1.10134124e-13 2.84217094e-14,6.71572875 2.84217094e-14,15 C2.84217094e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf6" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper5" transform="translate(77.500000, 314.000000) scale(-1, 1) rotate(-290.000000) translate(-77.500000, -314.000000) translate(71.000000, 299.000000)">
+                    <rect id="leafPlaceholder5" fill-opacity="0" fill="#D8D8D8" x="1.70530257e-13" y="-2.84217094e-14" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,2.48689958e-14 6.5,2.48689958e-14 C6.5,2.48689958e-14 1.70530257e-13,6.71572875 1.70530257e-13,15 C1.70530257e-13,23.2842712 6.5,30 6.5,30 Z" id="leaf5" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper4" transform="translate(19.500000, 345.000000) rotate(-190.000000) translate(-19.500000, -345.000000) translate(13.000000, 330.000000)">
+                    <rect id="leafPlaceholder4" fill-opacity="0" fill="#D8D8D8" x="-1.42108547e-14" y="1.13686838e-13" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,1.66977543e-13 6.5,1.66977543e-13 C6.5,1.66977543e-13 -1.42108547e-14,6.71572875 -1.42108547e-14,15 C-1.42108547e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf4" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper3" transform="translate(69.500000, 353.000000) rotate(-230.000000) translate(-69.500000, -353.000000) translate(63.000000, 338.000000)">
+                    <rect id="leafPlaceholder3" fill-opacity="0" fill="#D8D8D8" x="8.52651283e-14" y="-1.13686838e-13" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,-6.03961325e-14 6.5,-6.03961325e-14 C6.5,-6.03961325e-14 8.52651283e-14,6.71572875 8.52651283e-14,15 C8.52651283e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf3" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper2" transform="translate(105.500000, 370.000000) scale(-1, 1) rotate(-340.000000) translate(-105.500000, -370.000000) translate(99.000000, 355.000000)">
+                    <rect id="leafPlaceholder2" fill-opacity="0" fill="#D8D8D8" x="2.84217094e-14" y="-5.68434189e-14" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,-3.55271368e-15 6.5,-3.55271368e-15 C6.5,-3.55271368e-15 2.84217094e-14,6.71572875 2.84217094e-14,15 C2.84217094e-14,23.2842712 6.5,30 6.5,30 Z" id="leaf2" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+                <g id="leafWrapper1" transform="translate(23.500000, 382.000000) rotate(-300.000000) translate(-23.500000, -382.000000) translate(17.000000, 367.000000)">
+                    <rect id="leafPlaceholder1" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="13" height="30"></rect>
+                    <path d="M6.5,30 C6.5,30 13,23.2842712 13,15 C13,6.71572875 6.5,5.32907052e-14 6.5,5.32907052e-14 C6.5,5.32907052e-14 0,6.71572875 0,15 C0,23.2842712 6.5,30 6.5,30 Z" id="leaf1" fill="url(#linearGradient-4)" transform="translate(6.500000, 15.000000) scale(-1, -1) translate(-6.500000, -15.000000) "></path>
+                </g>
+            </g>
+            <g id="branches" transform="translate(68.000000, 40.000000)">
+                <g id="branchWrapper1" transform="translate(0.000000, 200.000000)">
+                    <rect id="branchPlaceholder1" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="9" height="162"></rect>
+                    <path d="M7,160 C4.46213909,140.309877 1.02627467,103.328642 2.25858161,61.4556812 C2.81528703,42.5392057 4.20854335,22.405833 5.9331958,2" id="branch1" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round"></path>
+                </g>
+                <g id="branchWrapper2" transform="translate(7.000000, 0.000000)">
+                    <rect id="branchPlaceholder2" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="9" height="179"></rect>
+                    <path d="M6.99999988,177 C4.46213903,157.30041 1.02627469,120.301396 2.2585816,78.4083036 C2.81528701,59.4827335 5.2753476,22.4156436 7,2" id="branch2" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(4.500000, 89.500000) scale(-1, 1) translate(-4.500000, -89.500000) "></path>
+                </g>
+            </g>
+            <g id="fruits" transform="translate(0.000000, 3.000000)">
+                <g id="fruitWrapper4" transform="translate(79.000000, 0.000000)">
+                    <rect id="fruitPlaceholder4" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="77" height="92"></rect>
+                    <path d="M67,90 C67,90 55.6267974,58.0571933 38.7667245,36.9618296 C21.9066516,15.8664658 2,10 2,10" id="miniBranch4" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(34.500000, 50.000000) scale(-1, 1) translate(-34.500000, -50.000000) "></path>
+                    <circle id="fruit4" fill="url(#linearGradient-6)" cx="67.5" cy="9.5" r="9.5"></circle>
+                </g>
+                <g id="fruitWrapper3" transform="translate(80.000000, 90.000000)">
+                    <rect id="fruitsPlacheholder3" fill="#D8D8D8" opacity="0" x="0" y="0" width="65" height="55"></rect>
+                    <path d="M56.9977181,53 C56.9977181,53 57.5798376,30.9166261 40.1491081,17.0497113 C22.7183786,3.1827964 2,9.38079176 2,9.38079176" id="miniBranch3" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(29.500000, 30.500000) scale(-1, 1) translate(-29.500000, -30.500000) "></path>
+                    <circle id="fruit3" fill="url(#linearGradient-7)" cx="55.5" cy="9.5" r="9.5"></circle>
+                </g>
+                <g id="fruitWrapper2" transform="translate(0.000000, 337.000000)">
+                    <rect id="fruitPlaceholder2" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="77" height="62"></rect>
+                    <path d="M75,60 C75,60 65.6997843,38.6111841 51.4883514,26.7683233 C37.2769185,14.9254625 15,10 15,10" id="miniBranch2" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round"></path>
+                    <circle id="fruit2" fill="url(#linearGradient-8)" cx="9.5" cy="9.5" r="9.5"></circle>
+                </g>
+                <g id="fruitWrapper1" transform="translate(73.000000, 336.000000)">
+                    <rect id="fruitPlaceholder1" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="76" height="63"></rect>
+                    <path d="M62,61 C62,61 52.6997843,39.6111841 38.4883514,27.7683233 C24.2769185,15.9254625 2,11 2,11" id="miniBranch1" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(32.000000, 36.000000) scale(-1, 1) translate(-32.000000, -36.000000) "></path>
+                    <path d="M66.5,19 C71.7467051,19 76,14.7467051 76,9.5 C76,4.25329488 71.7467051,0 66.5,0 C61.2532949,0 57,4.25329488 57,9.5 C57,14.7467051 61.2532949,19 66.5,19 Z" id="fruit1" fill="url(#linearGradient-9)"></path>
+                </g>
+            </g>
+            <g id="flowers" transform="translate(4.000000, 11.000000)">
+                <g id="flowerWrapper5" transform="translate(72.069113, 25.069113) scale(-1, 1) rotate(-325.000000) translate(-72.069113, -25.069113) translate(54.069113, 7.069113)">
+                    <rect id="flowerPlaceholder5" fill-opacity="0" fill="#D8D8D8" x="0.180847956" y="0.573576436" width="35" height="35"></rect>
+                    <g id="flower5" transform="translate(0.180848, 0.573576)">
+                        <ellipse id="flower5-e" fill="url(#linearGradient-10)" cx="17.5" cy="9.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower5-d" fill="url(#linearGradient-11)" cx="17.5" cy="25.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower5-c" fill="url(#linearGradient-12)" cx="9.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower5-b" fill="url(#linearGradient-13)" cx="25.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower5-a" fill="url(#radialGradient-14)" cx="17.5" cy="17.5" rx="7.5" ry="7.5"></ellipse>
+                    </g>
+                </g>
+                <g id="flowerWrapper4" transform="translate(49.500000, 149.000000) scale(-1, 1) translate(-49.500000, -149.000000) translate(22.000000, 111.000000)">
+                    <rect id="flowerPlaceholder4" fill-opacity="0" fill="#D8D8D8" x="1.13686838e-13" y="0" width="55" height="76"></rect>
+                    <path d="M32,74 C32,74 25.0710093,40.8253934 2,24" id="miniBranch6" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(17.000000, 49.000000) scale(-1, 1) translate(-17.000000, -49.000000) "></path>
+                    <g id="flower4" transform="translate(37.500000, 17.500000) scale(-1, 1) translate(-37.500000, -17.500000) translate(20.000000, 0.000000)">
+                        <ellipse id="flower4-e" fill="url(#linearGradient-1)" cx="17.5" cy="9.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower4-d" fill="url(#linearGradient-15)" cx="17.5" cy="25.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower4-c" fill="url(#linearGradient-16)" cx="9.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower4-b" fill="url(#linearGradient-17)" cx="25.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower4-a" fill="url(#radialGradient-14)" cx="17.5" cy="17.5" rx="7.5" ry="7.5"></ellipse>
+                    </g>
+                </g>
+                <g id="flowerWrapper3" transform="translate(48.000000, 216.000000)">
+                    <rect id="flowerPlaceholder3" fill-opacity="0" fill="#D8D8D8" transform="translate(22.000000, 22.500000) scale(-1, 1) translate(-22.000000, -22.500000) " x="0" y="-1.13686838e-13" width="44" height="45"></rect>
+                    <path d="M42,27 C42,27 41.5940455,13.3144995 22,2" id="miniBranch5" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(32.000000, 14.500000) scale(-1, 1) translate(-32.000000, -14.500000) "></path>
+                    <path d="M22,27 C22,27 21.5940455,13.3144995 2,2" id="miniBranch4" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round"></path>
+                    <g id="flower3" transform="translate(4.000000, 10.000000)">
+                        <ellipse id="flower3-e" fill="url(#linearGradient-18)" cx="17.5" cy="9.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower3-d" fill="url(#linearGradient-19)" cx="17.5" cy="25.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower3-c" fill="url(#linearGradient-20)" cx="9.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower3-b" fill="url(#linearGradient-9)" cx="25.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower3-a" fill="url(#radialGradient-14)" cx="17.5" cy="17.5" rx="7.5" ry="7.5"></ellipse>
+                    </g>
+                </g>
+                <g id="flowerWrapper2" transform="translate(34.500000, 288.000000) scale(-1, 1) rotate(-350.000000) translate(-34.500000, -288.000000) translate(7.000000, 250.000000)">
+                    <rect id="flowerPlaceholder2" fill-opacity="0" fill="#D8D8D8" x="1.42108547e-13" y="2.84217094e-14" width="55" height="76"></rect>
+                    <path d="M32,74 C32,74 25.0710093,40.8253934 2,24" id="miniBranch4" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(17.000000, 49.000000) scale(-1, 1) translate(-17.000000, -49.000000) "></path>
+                    <g id="flower2" transform="translate(37.500000, 17.500000) scale(-1, 1) translate(-37.500000, -17.500000) translate(20.000000, -0.000000)">
+                        <ellipse id="flower2-e" fill="url(#linearGradient-10)" cx="17.5" cy="9.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower2-d" fill="url(#linearGradient-11)" cx="17.5" cy="25.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower2-c" fill="url(#linearGradient-12)" cx="9.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower2-b" fill="url(#linearGradient-13)" cx="25.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower2-a" fill="url(#radialGradient-14)" cx="17.5" cy="17.5" rx="7.5" ry="7.5"></ellipse>
+                    </g>
+                </g>
+                <g id="flowerWrapper1" transform="translate(97.500000, 288.000000) rotate(-350.000000) translate(-97.500000, -288.000000) translate(70.000000, 250.000000)">
+                    <rect id="flowerPlaceholder1" fill-opacity="0" fill="#D8D8D8" x="2.84217094e-14" y="-5.68434189e-14" width="55" height="76"></rect>
+                    <path d="M32,74 C32,74 25.0710093,40.8253934 2,24" id="miniBranch3" stroke="url(#linearGradient-5)" stroke-width="4" stroke-linecap="round" transform="translate(17.000000, 49.000000) scale(-1, 1) translate(-17.000000, -49.000000) "></path>
+                    <g id="flower1" transform="translate(37.500000, 17.500000) scale(-1, 1) translate(-37.500000, -17.500000) translate(20.000000, 0.000000)">
+                        <ellipse id="flower1-e" fill="url(#linearGradient-21)" cx="17.5" cy="9.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower1-d" fill="url(#linearGradient-22)" cx="17.5" cy="25.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower1-c" fill="url(#linearGradient-23)" cx="9.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower1-b" fill="url(#linearGradient-24)" cx="25.5" cy="17.5" rx="9.5" ry="9.5"></ellipse>
+                        <ellipse id="flower1-a" fill="url(#radialGradient-14)" cx="17.5" cy="17.5" rx="7.5" ry="7.5"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

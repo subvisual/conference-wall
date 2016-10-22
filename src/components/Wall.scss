@@ -1,6 +1,15 @@
 .Wall {
+  overflow: hidden;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Wall-twitter {
   display: flex;
   flex-direction: row;
+  position: relative;
 
   overflow: hidden;
 }
@@ -8,6 +17,10 @@
 .Wall-main {
   flex-basis: 70%;
   padding-right: 50px;
+  padding: 80px 0px 80px 80px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .Wall-logo {
@@ -18,7 +31,13 @@
   }
 }
 
+.Wall-announcements {
+  flex-grow: 1;
+}
+
 .Wall-sidebar {
   flex-basis: 30%;
   overflow: hidden;
+  background-color: white;
+  padding: 80px 80px 80px 40px;
 }

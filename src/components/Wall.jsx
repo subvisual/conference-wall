@@ -4,6 +4,7 @@ import React, { Component, PropTypes } from 'react';
 import './Wall.scss';
 
 import Tweet from './Tweet';
+import Announcement from './Announcement';
 
 import _ from 'lodash';
 
@@ -63,24 +64,33 @@ export default class Wall extends Component {
     );
   }
 
-  announcement = () => {
+  announcementTweet = () => {
 
   }
 
   render() {
     return <div className="Wall">
-      <div className="Wall-main">
-        <div className="Wall-logo">
-          <img src="/images/logo.png" alt="RubyConf PT logo" />
+      <div className="Wall-twitter">
+        <div className="Stitches red top" />
+        <div className="Stitches red bottom" />
+        <div className="Stitches red left" />
+        <div className="Stitches red right" />
+
+        <div className="Wall-main">
+          <div className="Wall-logo">
+            <img src="/images/logo.png" alt="RubyConf PT logo" />
+          </div>
+          <div className="Wall-highlight">
+            {this.highlightedTweet()}
+          </div>
         </div>
-        <div className="Wall-highlight">
-          {this.highlightedTweet()}
+        <div className="Wall-sidebar">
+          {this.olderTweets()}
         </div>
       </div>
-      <div className="Wall-sidebar">
-        {this.olderTweets()}
+      <div className="Wall-announcements">
+        <Announcement tweet={this.announcementTweet()} />
       </div>
-      {this.announcement()}
     </div>;
   }
 }
