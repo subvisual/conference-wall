@@ -10,20 +10,17 @@ import _ from 'lodash';
 
 export default class Wall extends Component {
   static propTypes = {
-    hashtags: PropTypes.array,
     children: PropTypes.node,
     server: PropTypes.string,
   }
 
   static defaultProps = {
-    hashtags: ['rubyconfpt'],
     twitterStreamServer: 'localhost:4000',
   }
 
   constructor(props) {
     super(props);
     this.state = {
-      hashtags: props.hashtags,
       tweets: [],
       announcement: null,
       socket: null,
@@ -32,7 +29,7 @@ export default class Wall extends Component {
 
   componentDidMount() {
     this.setState(() => {
-      const socket = io.connect(this.props.twitterStreamServer, { query: this.hashtags })
+      const socket = io.connect(this.props.twitterStreamServer)
       socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
       socket.on('tweet', this.onTweet);
       socket.on('announcement', this.onAnnouncement);
@@ -47,11 +44,6 @@ export default class Wall extends Component {
     });
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.hashtags)
-      this.setState({ hashtags: nextProps.hashtags });
-  }
-
   onTweet = tweet => {
     this.setState({ tweets: _.take([tweet, ...this.state.tweets], 10) })
   };
@@ -63,12 +55,10 @@ export default class Wall extends Component {
   }
 
   highlightedTweet = () => {
-    return "asd";
     return <Tweet modifier="large" tweet={_.head(this.state.tweets)} />;
   }
 
   olderTweets = () => {
-    return "asd";
     return _.tail(this.state.tweets).map(tweet =>
       <Tweet key={tweet.id} tweet={tweet} />
     );
