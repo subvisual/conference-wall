@@ -69,7 +69,7 @@ export default class Announcement extends Component {
         <div className="Announcement-header">Coming up next</div>
         <Talk talk={this.upcomingTalk} />
       </div>;
-    } else if (1 === this.props.tweet) {
+    } else if (this.props.tweet) {
       return <div className="Announcement-tweet">
         <div className="Announcement-header">Announcement:</div>
         <Tweet modifier="announcement" tweet={this.props.tweet} />
