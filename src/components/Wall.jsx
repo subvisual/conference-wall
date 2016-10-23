@@ -25,6 +25,7 @@ export default class Wall extends Component {
     this.state = {
       hashtags: props.hashtags,
       tweets: [],
+      announcement: null,
       socket: null,
     };
   }
@@ -34,6 +35,7 @@ export default class Wall extends Component {
       const socket = io.connect(this.props.twitterStreamServer, { query: this.hashtags })
       socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
       socket.on('tweet', this.onTweet);
+      socket.on('announcement', this.onAnnouncement);
       return { socket };
     });
   }
@@ -54,25 +56,28 @@ export default class Wall extends Component {
     this.setState({ tweets: _.take([tweet, ...this.state.tweets], 10) })
   };
 
+  onAnnouncement = announcement => {
+    console.log("ANNOUNCEMENT");
+    console.log(announcement);
+    this.setState({ announcement });
+  }
+
   highlightedTweet = () => {
+    return "asd";
     return <Tweet modifier="large" tweet={_.head(this.state.tweets)} />;
   }
 
   olderTweets = () => {
+    return "asd";
     return _.tail(this.state.tweets).map(tweet =>
       <Tweet key={tweet.id} tweet={tweet} />
     );
-  }
-
-  announcementTweet = () => {
-    return _.head(this.state.tweets);
   }
 
   render() {
     return <div className="Wall">
       <div className="Wall-twitter">
         <div className="Stitches red top" />
-        <div className="Stitches red bottom" />
         <div className="Stitches red left" />
         <div className="Stitches red right" />
 
@@ -89,7 +94,7 @@ export default class Wall extends Component {
         </div>
       </div>
       <div className="Wall-announcements">
-        <Announcement tweet={this.announcementTweet()} />
+        <Announcement tweet={this.state.announcement} />
       </div>
     </div>;
   }

@@ -99,6 +99,11 @@ module.exports = {
         include: paths.appSrc,
         loaders: ["style", "css", "sass"]
       },
+      {
+        test: /\.yml$/,
+        include: paths.appSrc,
+        loaders: ["yaml"],
+      },
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,

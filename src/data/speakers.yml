@@ -1,0 +1,127 @@
+- first_name: PJ
+  last_name: Hagerty
+  title: Master of Ceremonies
+  twitter: aspleenic
+  github: aspleenic
+  classes: mc
+  mc: true
+
+- first_name: Pat
+  last_name: Allan
+  title: Gelato Connoisseur, Pancake Master, Ruby Developer
+  twitter: pat
+  github: pat
+  talk: "Open Source: Power and the Passion"
+  abstract: TBA
+
+- first_name: Hiro
+  last_name: Asari
+  title: Hacker on Travis CI and JRuby
+  twitter: hiro_asari
+  github: BanzaiMan
+  talk: Control Theory
+  abstract: TBA
+
+- first_name: Martin
+  last_name: Fowler
+  title: Software Development Loudmouth
+  twitter: martinfowler
+  github: martinfowler
+  talk: Software Design in the 21st Century
+  abstract: In the last decade or so we've seen a number of new ideas added to the mix to help us effectively design our software. Patterns help us capture the solutions and rationale for using them. Refactoring allows us to alter the design of a system after the code is written. Agile methods, in particular Extreme Programming, give us a highly iterative and evolutionary approach which is particularly well suited to changing requirements and environments. Martin Fowler has been a leading voice in these techniques and will give a suite of short talks featuring various aspects about his recent thinking about how these and other developments affect our software development.
+
+- first_name: Yehuda
+  last_name: Katz
+  title: Ember.js Creator and Open Source Addict
+  twitter: wycats
+  github: wycats
+  talk: "Zen and the Art of Package Management"
+  abstract: TBA
+
+- first_name: Marie
+  last_name: Kochsiek
+  title: Programmer & Social Scientist
+  twitter: lila_luca
+  github: lilaluca
+  talk: talk
+  abstract: TBA
+
+- first_name: Thea
+  last_name: Kupler
+  title: Changer & Programmer to be, Sustainability Enthusiast
+  twitter: theatanzt
+  github: theaamanda
+  talk: talk
+  abstract: TBA
+
+- first_name: Kerri
+  last_name: Miller
+  title: Software Developer, Team Lead, Puppeteer, Sous Chef
+  twitter: kerrizor
+  github: kerrizor
+  talk: "Crescent Wrenches and Debuggers: Building Your Own Toolkit For Rational Inquiry"
+  abstract: TBA
+
+- first_name: José
+  last_name: Mota
+  title: Ruby developer and educator
+  twitter: josemotanet
+  github: josemotanet
+  talk: "Take the time"
+  abstract: TBA
+
+- first_name: Aaron
+  last_name: Patterson
+  title: Ruby and Rails Core Teams
+  twitter: tenderlove
+  github: tenderlove
+  talk: Methods of Memory Management in MRI
+  abstract: "Let's talk about MRI's GC! In this talk we will cover memory management algorithms in MRI. We will cover how objects are allocated and how they are freed. We will start by looking at Ruby's memory layout, including page allocation and object allocations within those pages. Next we'll cover collection algorithms used by MRI starting with the mark and sweep algorithm, followed by generational collection, and the tri color abstraction. Finally we'll cover experimental developments for the GC like heap splitting. Expect to leave this talk with heaps of pointers to add to your remembered set!"
+
+- first_name: Tobias
+  last_name: Pfeiffer
+  title: Developer, Open-Source-Enthusiast, Human
+  twitter: pragtob
+  github: pragtob
+  talk: "Elixir & Phoenix – fast, concurrent and explicit"
+  abstract: TBA
+
+- first_name: Caio
+  last_name: Sacramento
+  title: Software Engineer at Meedan, Headbanger
+  twitter: caiosba
+  github: caiosba
+  talk: "Using GraphQL and Relay for hybrid Ruby on Rails applications"
+  abstract: TBA
+
+- first_name: Nada
+  last_name: Salama
+  title: Computer engineering and RGSoC student
+  twitter: Nada_Ashraf96
+  github: Nada1996
+  talk: talk
+  abstract: TBA
+
+- first_name: Mayar
+  last_name: Saleh
+  title: Computer engineering and RGSoC student
+  twitter: MayarAlaa122
+  github: MayarAlaa
+  talk: talk
+  abstract: TBA
+
+- first_name: Piotr
+  last_name: Szotkowski
+  title: Hacker scientist. Assistant professor at Warsaw University of Technology
+  twitter: chastell
+  github: chastell
+  talk: "They Hear Me Typin’, They Hatin’"
+  abstract: TBA
+
+- first_name: Katherine
+  last_name: Wu
+  title: Brightly colored, Curious, and Strong
+  twitter: kwugirl
+  github: kwugirl
+  talk: "Ask vs. Guess Culture Communication"
+  abstract: TBA
