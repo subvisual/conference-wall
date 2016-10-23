@@ -49,8 +49,6 @@ export default class Wall extends Component {
   };
 
   onAnnouncement = announcement => {
-    console.log("ANNOUNCEMENT");
-    console.log(announcement);
     this.setState({ announcement });
   }
 
