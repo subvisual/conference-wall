@@ -59,6 +59,7 @@ export default class Announcement extends Component {
   }
 
   content = () => {
+    console.log('current', this.upcomingTalk);
     if (this.currentTalk) {
       return <div className="Announcement-talk">
         <div className="Announcement-header">Now on stage</div>
@@ -71,7 +72,7 @@ export default class Announcement extends Component {
       </div>;
     } else if (this.props.tweet) {
       return <div className="Announcement-tweet">
-        <div className="Announcement-header">Announcement:</div>
+        <div className="Announcement-header">Announcement</div>
         <Tweet modifier="announcement" tweet={this.props.tweet} />
       </div>;
     }

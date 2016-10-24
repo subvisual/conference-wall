@@ -66,6 +66,7 @@ export default class Wall extends Component {
     return <div className="Wall">
       <div className="Wall-twitter">
         <div className="Stitches red top" />
+        <div className="Stitches red bottom" />
         <div className="Stitches red left" />
         <div className="Stitches red right" />
 
