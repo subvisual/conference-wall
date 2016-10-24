@@ -2,15 +2,32 @@ $Announcement-anim-duration: 2s;
 
 .Announcement {
   height: 400px;
+  position: relative;
+}
+
+.Announcement > span {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
+.Announcement > span > .Announcement-talk,
+.Announcement > span > .Announcement-tweet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .Announcement-talk,
 .Announcement-tweet {
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .Announcement-header {
@@ -18,4 +35,22 @@ $Announcement-anim-duration: 2s;
   font-weight: bold;
   color: #555;
   margin-bottom: 20px;
+}
+
+.Announcement-transition-enter {
+  opacity: 0.01;
+}
+
+.Announcement-transition-enter-active {
+  opacity: 1;
+  transition: opacity 750ms 750ms ease-in;
+}
+
+.Announcement-transition-leave {
+  opacity: 1;
+}
+
+.Announcement-transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 750ms ease-in;
 }

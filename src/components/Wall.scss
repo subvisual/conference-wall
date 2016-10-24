@@ -1,9 +1,6 @@
 .Wall {
   overflow: hidden;
   height: 100%;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .Wall-twitter {
@@ -14,6 +11,10 @@
   overflow: hidden;
 
   height: calc(100% - 400px);
+}
+
+.Wall-announcements {
+  height: 400px;
 }
 
 .Wall-main {
@@ -31,10 +32,6 @@
   img {
     height: 90px;
   }
-}
-
-.Wall-announcements {
-  flex-grow: 1;
 }
 
 .Wall-sidebar {

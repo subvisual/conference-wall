@@ -18,7 +18,6 @@ export default class Tweet extends Component {
 
   data = () => {
     const result = this.props.tweet;
-    console.log(this.props.tweet);
     result.user.profile_image_url = result.user.profile_image_url.replace('_normal', '');
     return result;
   }
