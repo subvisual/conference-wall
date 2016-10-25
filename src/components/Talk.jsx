@@ -15,42 +15,99 @@ export default class Talk extends Component {
     talk: null
   }
 
-  get speaker() {
-    if (!this.props.talk) {
+  getSpeaker(handle) {
+    return _.find(Speakers, { twitter: handle });
+  }
+
+  getRailsGirlsData() {
+    if (this.props.talk.speaker !== "girls") {
       return;
     }
 
-    return _.find(Speakers, { twitter: this.props.talk.speaker });
+    const speakers = _.map([
+        'lila_luca',
+        'theatanzt',
+        'Nada_Ashraf96',
+        'MayarAlaa122'
+      ], this.getSpeaker).map((speaker) => {
+        speaker.imageUrl = `/images/speakers/${speaker.first_name.toLowerCase()}-${speaker.last_name.toLowerCase()}.jpg`;
+        return speaker;
+      });
+
+    return {
+      speakers: speakers,
+      start: this.props.talk.start,
+      end: this.props.talk.end,
+      title: "Rails Girls Summer of Code: Falling into Rabbit Holes"
+    }
   }
 
-  get data() {
-    if (!this.speaker) {
+  getTalkData(talk) {
+    const speaker = this.getSpeaker(talk.speaker);
+
+    if (!speaker) {
       return;
     }
 
     return {
-      title: this.speaker.title,
-      imageUrl: `/images/speakers/${this.speaker.first_name.toLowerCase()}-${this.speaker.last_name.toLowerCase()}.jpg`,
-      name: `${this.speaker.first_name} ${this.speaker.last_name}`,
-      twitter: `@${this.speaker.twitter}`,
-      start: this.props.talk.start,
-      end: this.props.talk.end
+      title: speaker.title,
+      imageUrl: `/images/speakers/${speaker.first_name.toLowerCase()}-${speaker.last_name.toLowerCase()}.jpg`,
+      name: `${speaker.first_name} ${speaker.last_name}`,
+      twitter: `@${speaker.twitter}`,
+      start: talk.start,
+      end: talk.end
     }
   }
 
-  render() {
+  renderRegularTalk = () => {
+    const data = this.getTalkData(this.props.talk);
+
     return <div className="Talk">
       <div className="Flex row alignCenter">
-        <img src={this.data.imageUrl} alt={this.data.name} className="Talk-speakerPhoto" />
+        <img src={data.imageUrl} alt={data.name} className="Talk-speakerPhoto" />
         <div className="Flex column alignStart">
-          <div className="Talk-title">{this.data.title}</div>
+          <div className="Talk-title">{data.title}</div>
           <div className="Talk-info">
-            <span className="Talk-speaker">{this.data.name}</span>
-            <span className="Talk-twitter">{this.data.twitter}</span>
-            <span className="Talk-time">{this.data.start} - {this.data.end}</span>
+            <span className="Talk-speaker">{data.name}</span>
+            <span className="Talk-twitter">{data.twitter}</span>
+            <span className="Talk-time">{data.start} - {data.end}</span>
           </div>
         </div>
       </div>
     </div>;
   }
+
+  renderRailsGirlsTalk = () => {
+    const data = this.getRailsGirlsData(this.props.talk);
+
+    return <div className="Talk">
+      <div className="Flex row alignCenter">
+        <div className="Talk-multiplePhotos">
+          {data.speakers.map((speaker) => {
+            return <img key={speaker.twitter} src={speaker.imageUrl} alt={speaker.twitter} className="Talk-speakerPhotoSmall" />
+          })}
+        </div>
+        <div className="Flex column alignStart">
+          <div className="Talk-title">{data.title}</div>
+          <div className="Talk-info">
+            <span className="Talk-speaker">
+              {data.speakers.map((speaker) => {
+                return `${speaker.first_name} ${speaker.last_name}`;
+              }).join(", ")}
+            </span>
+            <span className="Talk-time">{data.start} - {data.end}</span>
+          </div>
+        </div>
+      </div>
+    </div>;
+  }
+
+  render() {
+    if (this.props.talk.speaker == "girls") {
+      return this.renderRailsGirlsTalk();
+    } else {
+      return this.renderRegularTalk();
+    }
+  }
+
 }

@@ -27,7 +27,7 @@ export default class Announcement extends Component {
   componentDidMount = () => {
     this.atInterval();
     this.setState({
-      intervalId: setInterval(this.atInterval, 10000)
+      intervalId: setInterval(this.atInterval, 2000)
     });
   }
 
@@ -36,7 +36,6 @@ export default class Announcement extends Component {
   }
 
   atInterval = () => {
-    console.log('rotating');
     this.setState({
       currentTalk: this.getCurrentTalk(),
       upcomingTalk: this.getUpcomingTalk(),
@@ -79,6 +78,12 @@ export default class Announcement extends Component {
     return this.findTalk((talk) => {
       const talkStartTimestamp = moment(talk.start, "H:mm").unix();
       const difference = talkStartTimestamp - moment().unix();
+
+      console.log(talk.speaker);
+      if (talk.speaker == "tenderlove") {
+        console.log('asd')
+        console.log(difference);
+      }
       return difference > 0 && difference < (15 * 60);
     });
   }
@@ -93,7 +98,7 @@ export default class Announcement extends Component {
   }
 
   renderUpcomingTalk = () => {
-    if (this.state.upcomingTalk && this.state.upcomingTalk.speaker != this.state.currentTalk.speaker) {
+    if (this.state.upcomingTalk && _.get(this.state.upcomingTalk, 'speaker') != _.get(this.state.currentTalk, 'speaker')) {
       return <div key="upcomingTalk" className="Announcement-talk">
         <div className="Announcement-header">Coming up next</div>
         <Talk talk={this.state.upcomingTalk} />
@@ -101,21 +106,22 @@ export default class Announcement extends Component {
     }
   }
 
-  renderTweet = () => {
-    if (this.props.tweet) {
+  renderTweet = (tweet) => {
+    if (tweet) {
       return <div key="tweet" className="Announcement-tweet">
-        <Tweet modifier="announcement" tweet={this.props.tweet} />
+        <Tweet modifier="announcement" tweet={tweet} />
       </div>;
     }
   }
 
   content = () => {
+    console.log(this.state.upcomingTalk);
     const array = _.filter([
       this.renderCurrentTalk(),
       this.renderUpcomingTalk(),
-      this.renderTweet(),
-    ])
-    console.log(array.length, this.state.counter);
+    ].concat(
+      _.map(this.props.tweets, this.renderTweet)
+    ))
     return array[this.state.counter] || array[0];
   }
 
