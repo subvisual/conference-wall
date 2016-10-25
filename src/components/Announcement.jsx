@@ -78,12 +78,6 @@ export default class Announcement extends Component {
     return this.findTalk((talk) => {
       const talkStartTimestamp = moment(talk.start, "H:mm").unix();
       const difference = talkStartTimestamp - moment().unix();
-
-      console.log(talk.speaker);
-      if (talk.speaker == "tenderlove") {
-        console.log('asd')
-        console.log(difference);
-      }
       return difference > 0 && difference < (15 * 60);
     });
   }
@@ -98,7 +92,7 @@ export default class Announcement extends Component {
   }
 
   renderUpcomingTalk = () => {
-    if (this.state.upcomingTalk && _.get(this.state.upcomingTalk, 'speaker') != _.get(this.state.currentTalk, 'speaker')) {
+    if (this.state.upcomingTalk && _.get(this.state.upcomingTalk, 'speaker') !== _.get(this.state.currentTalk, 'speaker')) {
       return <div key="upcomingTalk" className="Announcement-talk">
         <div className="Announcement-header">Coming up next</div>
         <Talk talk={this.state.upcomingTalk} />
@@ -106,19 +100,18 @@ export default class Announcement extends Component {
     }
   }
 
-  renderTweet = (tweet) => {
-    if (tweet) {
+  renderTweet = (announcement) => {
+    if (announcement) {
       return <div key="tweet" className="Announcement-tweet">
-        <Tweet modifier="announcement" tweet={tweet} />
+        <Tweet modifier="announcement" tweet={announcement.tweet} />
       </div>;
     }
   }
 
   content = () => {
-    console.log(this.state.upcomingTalk);
     const array = _.filter([
-      this.renderCurrentTalk(),
-      this.renderUpcomingTalk(),
+      // this.renderCurrentTalk(),
+      // this.renderUpcomingTalk(),
     ].concat(
       _.map(this.props.tweets, this.renderTweet)
     ))
@@ -128,9 +121,9 @@ export default class Announcement extends Component {
   render() {
     return <div className="Announcement">
       <div className="Stitches blue top" />
-      <div className="Stitches blue bottom" />
       <div className="Stitches blue left" />
       <div className="Stitches blue right" />
+      <div className="Stitches blue bottom" />
 
       <CSSTransitionGroup transitionName="Announcement-transition" transitionEnterTimeout={1500} transitionLeaveTimeout={750}>
         {this.content()}

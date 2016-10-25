@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import moment from 'moment';
 import _ from 'lodash';
 
 import './Talk.scss';
@@ -103,7 +102,7 @@ export default class Talk extends Component {
   }
 
   render() {
-    if (this.props.talk.speaker == "girls") {
+    if (this.props.talk.speaker === "girls") {
       return this.renderRailsGirlsTalk();
     } else {
       return this.renderRegularTalk();

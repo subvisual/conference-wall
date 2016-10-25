@@ -22,7 +22,7 @@ export default class Wall extends Component {
     super(props);
     this.state = {
       tweets: [],
-      announcement: null,
+      announcements: [],
       socket: null,
     };
   }
@@ -33,23 +33,43 @@ export default class Wall extends Component {
       socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
       socket.on('tweet', this.onTweet);
       socket.on('announcement', this.onAnnouncement);
-      return { socket };
+      const intervalId = setInterval(this.removeOldAnnouncements, 1000);
+      return { socket, intervalId };
     });
+  }
+
+  removeOldAnnouncements = () => {
+    this.setState(() => {
+      const currentTimestamp = Date.now();
+
+      return {
+        announcements: _.filter(this.state.announcements, (announcement) => {
+          return currentTimestamp - announcement.timestamp < (60 * 1000);
+        })
+      };
+    })
   }
 
   componentWillUnmount() {
     this.setState(() => {
       this.state.socket.destroy();
+      clearInterval(this.state.intervalId);
       return { socket: null };
     });
   }
 
   onTweet = tweet => {
-    this.setState({ tweets: _.take([tweet, ...this.state.tweets], 10) })
+    this.setState({ tweets: _.take([tweet, ...this.state.tweets], 5) })
   };
 
-  onAnnouncement = announcement => {
-    this.setState({ announcement });
+  onAnnouncement = tweet => {
+    const timestamp = Date.now();
+    this.setState({
+      announcements: _.take([
+        { tweet, timestamp },
+        ...this.state.announcements
+      ], 3)
+    });
   }
 
   highlightedTweet = () => {
@@ -66,7 +86,6 @@ export default class Wall extends Component {
     return <div className="Wall">
       <div className="Wall-twitter">
         <div className="Stitches red top" />
-        <div className="Stitches red bottom" />
         <div className="Stitches red left" />
         <div className="Stitches red right" />
 
@@ -83,7 +102,7 @@ export default class Wall extends Component {
         </div>
       </div>
       <div className="Wall-announcements">
-        <Announcement tweet={this.state.announcement} />
+        <Announcement tweets={[_.head(this.state.announcements)]} />
       </div>
     </div>;
   }

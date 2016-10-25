@@ -1,5 +1,5 @@
 - name: Day 1
-  date: Thursday, October 27th
+  date: Tuesday, October 25th
   events:
     - name: Check-in
       start: "8:30"
@@ -59,17 +59,17 @@
 
     - name: talk
       start: "16:00"
-      end: "16:40"
+      end: "16:20"
       type: talk
       speaker: pragtob
 
     - name: Coffee Break
-      start: "16:40"
+      start: "16:21"
       end: "17:00"
       type: coffee-break
 
     - name: talk
-      start: "17:00"
+      start: "16:20"
       end: "17:40"
       speaker: girls
       rails_girls: true
