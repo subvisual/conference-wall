@@ -102,9 +102,11 @@ export default class Wall extends Component {
   }
 
   currentTweet = () => {
-    const currentTweet = this.tweets[this.state.tweetRotateCounter % this.tweets.length];
+    return this.tweets[this.state.tweetRotateCounter % this.tweets.length];
+  }
 
-    if (currentTweet) {
+  renderCurrentTweet = () => {
+    if (this.currentTweet()) {
       return <Tweet modifier="large" tweet={currentTweet.data} />;
     }
   }
