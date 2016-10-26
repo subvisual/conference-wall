@@ -107,7 +107,7 @@ export default class Wall extends Component {
 
   renderCurrentTweet = () => {
     if (this.currentTweet()) {
-      return <Tweet modifier="large" tweet={currentTweet.data} />;
+      return <Tweet modifier="large" tweet={this.currentTweet()} />;
     }
   }
 
@@ -129,7 +129,7 @@ export default class Wall extends Component {
             <img src="/images/logo.png" alt="RubyConf PT logo" />
           </div>
           <div className="Wall-highlight">
-            {this.currentTweet()}
+            {this.renderCurrentTweet()}
           </div>
         </div>
         <div className="Wall-sidebar">
