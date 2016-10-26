@@ -8,6 +8,9 @@ import Announcement from './Announcement';
 
 import _ from 'lodash';
 
+const MAX_TWEETS = 5;
+const MAX_ANNOUNCEMENTS = 3;
+
 export default class Wall extends Component {
   static propTypes = {
     children: PropTypes.node,
@@ -23,6 +26,7 @@ export default class Wall extends Component {
     this.state = {
       tweets: [],
       announcements: [],
+      tweetRotateCounter: 0,
       socket: null,
     };
   }
@@ -33,19 +37,23 @@ export default class Wall extends Component {
       socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
       socket.on('tweet', this.onTweet);
       socket.on('announcement', this.onAnnouncement);
-      const intervalId = setInterval(this.removeOldAnnouncements, 1000);
+      const intervalId = setInterval(this.tick, 1000);
       return { socket, intervalId };
     });
   }
 
-  removeOldAnnouncements = () => {
+  tick = () => {
     this.setState(() => {
       const currentTimestamp = Date.now();
 
       return {
         announcements: _.filter(this.state.announcements, (announcement) => {
           return currentTimestamp - announcement.timestamp < (60 * 1000);
-        })
+        }),
+        tweets: _.filter(this.state.tweets, (tweet) => {
+          return currentTimestamp - tweet.timestamp < (60 * 1000);
+        }),
+        tweetRotateCounter: (this.state.tweetRotateCounter + 1) % MAX_TWEETS,
       };
     })
   }
@@ -59,7 +67,13 @@ export default class Wall extends Component {
   }
 
   onTweet = tweet => {
-    this.setState({ tweets: _.take([tweet, ...this.state.tweets], 5) })
+    const timestamp = Date.now();
+    this.setState({
+      tweets: _.take([
+        { tweet, timestamp },
+        , ...this.state.tweets
+      ], MAX_TWEETS)
+    })
   };
 
   onAnnouncement = tweet => {
@@ -68,18 +82,14 @@ export default class Wall extends Component {
       announcements: _.take([
         { tweet, timestamp },
         ...this.state.announcements
-      ], 3)
+      ], MAX_ANNOUNCEMENTS)
     });
   }
 
-  highlightedTweet = () => {
-    return <Tweet modifier="large" tweet={_.head(this.state.tweets)} />;
-  }
+  currentTweet = () => {
+    const currentTweet = this.state.tweets[this.state.tweetRotateCounter % this.state.tweets.length];
 
-  olderTweets = () => {
-    return _.tail(this.state.tweets).map(tweet =>
-      <Tweet key={tweet.id} tweet={tweet} />
-    );
+    return <Tweet modifier="large" tweet={currentTweet} />;
   }
 
   render() {
@@ -94,15 +104,12 @@ export default class Wall extends Component {
             <img src="/images/logo.png" alt="RubyConf PT logo" />
           </div>
           <div className="Wall-highlight">
-            {this.highlightedTweet()}
+            {this.currentTweet()}
           </div>
-        </div>
-        <div className="Wall-sidebar">
-          {this.olderTweets()}
         </div>
       </div>
       <div className="Wall-announcements">
-        <Announcement tweets={[_.head(this.state.announcements)]} />
+        <Announcement tweets={this.state.announcements} />
       </div>
     </div>;
   }

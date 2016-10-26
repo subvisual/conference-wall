@@ -18,19 +18,18 @@
 }
 
 .Wall-main {
-  flex-basis: 70%;
-  padding-right: 50px;
-  padding: 80px 0px 80px 80px;
+  flex-basis: 100%;
+  padding: 40px;
 
   display: flex;
   flex-direction: column;
 }
 
 .Wall-logo {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 
   img {
-    height: 90px;
+    height: 60px;
   }
 }
 

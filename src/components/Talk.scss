@@ -7,6 +7,7 @@
   height: 200px;
   border-radius: 50%;
   margin-right: 50px;
+  flex-shrink: 0;
 }
 
 .Talk-multiplePhotos {
@@ -27,6 +28,7 @@
   font-weight: bold;
   color: #555;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .Talk-speaker {

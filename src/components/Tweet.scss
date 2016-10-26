@@ -46,9 +46,26 @@
 
     img {
       width: auto !important;
-      max-height: 300px !important;
+      max-height: 400px !important;
     }
   }
+
+  .content {
+    display: flex !important;
+    flex-wrap: wrap !important;
+
+    .header {
+      flex: 1 0 100% !important;
+      height: 60px !important;
+    }
+
+    .tweet-text,
+    .AdaptiveMedia {
+      flex-basis: 50%;
+    }
+  }
+
+
 }
 
 .Tweet:not(.large) {

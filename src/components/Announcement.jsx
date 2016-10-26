@@ -110,12 +110,12 @@ export default class Announcement extends Component {
 
   content = () => {
     const array = _.filter([
-      // this.renderCurrentTalk(),
-      // this.renderUpcomingTalk(),
+      this.renderCurrentTalk(),
+      this.renderUpcomingTalk(),
     ].concat(
       _.map(this.props.tweets, this.renderTweet)
     ))
-    return array[this.state.counter] || array[0];
+    return array[this.state.counter % array.length];
   }
 
   render() {
