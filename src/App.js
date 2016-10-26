@@ -13,6 +13,7 @@ if (process.env.NODE_ENV === "production") {
 } else {
   server = 'localhost:4000';
 }
+  server = 'rubyconfpt-wall-server.herokuapp.com:80';
 
 class App extends Component {
   render() {

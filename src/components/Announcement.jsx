@@ -12,11 +12,11 @@ const Schedule = require('json!yaml!../data/schedule.yml');
 
 export default class Announcement extends Component {
   static propTypes = {
-    tweet: PropTypes.object
+    tweets: PropTypes.array
   }
 
   static defaultProps = {
-    tweet: null
+    tweets: []
   }
 
   constructor(props) {
@@ -27,7 +27,7 @@ export default class Announcement extends Component {
   componentDidMount = () => {
     this.atInterval();
     this.setState({
-      intervalId: setInterval(this.atInterval, 2000)
+      intervalId: setInterval(this.atInterval, 8000)
     });
   }
 
@@ -119,6 +119,7 @@ export default class Announcement extends Component {
   }
 
   render() {
+    console.log(_.map(this.props.tweets, (t) => t.tweet))
     return <div className="Announcement">
       <div className="Stitches blue top" />
       <div className="Stitches blue left" />

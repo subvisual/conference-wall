@@ -37,23 +37,24 @@ export default class Wall extends Component {
       socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
       socket.on('tweet', this.onTweet);
       socket.on('announcement', this.onAnnouncement);
-      const intervalId = setInterval(this.tick, 1000);
+      const intervalId = setInterval(this.tick, 7000);
       return { socket, intervalId };
     });
   }
 
   tick = () => {
-    this.setState(() => {
+    this.setState((prevState) => {
       const currentTimestamp = Date.now();
 
       return {
-        announcements: _.filter(this.state.announcements, (announcement) => {
-          return currentTimestamp - announcement.timestamp < (60 * 1000);
+        announcements: _.filter(prevState.announcements, (announcement) => {
+          console.log('announcement', announcement);
+          return announcement.announcement && currentTimestamp - announcement.timestamp < (60 * 1000);
         }),
-        tweets: _.filter(this.state.tweets, (tweet) => {
-          return currentTimestamp - tweet.timestamp < (60 * 1000);
+        tweets: _.filter(prevState.tweets, (tweet) => {
+          return tweet && currentTimestamp - tweet.timestamp < (60 * 1000);
         }),
-        tweetRotateCounter: (this.state.tweetRotateCounter + 1) % MAX_TWEETS,
+        tweetRotateCounter: (prevState.tweetRotateCounter + 1) % MAX_TWEETS,
       };
     })
   }
@@ -89,7 +90,10 @@ export default class Wall extends Component {
   currentTweet = () => {
     const currentTweet = this.state.tweets[this.state.tweetRotateCounter % this.state.tweets.length];
 
-    return <Tweet modifier="large" tweet={currentTweet} />;
+    if (currentTweet) {
+      return <Tweet modifier="large" tweet={currentTweet.tweet} />;
+    }
+
   }
 
   render() {
