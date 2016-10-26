@@ -1,1 +1,0 @@
-socket: npm run server
