@@ -31,38 +31,52 @@ export default class Wall extends Component {
     };
   }
 
-  componentDidMount() {
-    this.setState(() => {
-      const socket = io.connect(this.props.twitterStreamServer)
-      socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
-      socket.on('tweet', this.onTweet);
-      socket.on('announcement', this.onAnnouncement);
-      const intervalId = setInterval(this.tick, 7000);
-      return { socket, intervalId };
-    });
+  get tweets() {
+    return _.filter(this.state.tweets);
   }
 
-  tick = () => {
+  get announcements() {
+    return _.filter(this.state.annoucements);
+  }
+
+  componentDidMount() {
+    const socket = io.connect(this.props.twitterStreamServer)
+    socket.on('initialTweets', tweets => _.map(tweets, this.onTweet));
+    socket.on('initialAnnouncements', announcements => _.map(announcements, this.onAnnouncement));
+    socket.on('tweet', this.onTweet);
+    socket.on('announcement', this.onAnnouncement);
+    this.tickFilters();
+    this.tickTweetCounter();
+    const filterIntervalId = setInterval(this.tickFilters, 1000);
+    const tweetRotatorId = setInterval(this.tickTweetCounter, 7000);
+
+    this.setState({ socket, filterIntervalId, tweetRotatorId });
+  }
+
+  tickTweetCounter = () => {
+    this.setState({ tweetRotateCounter: (this.state.tweetRotateCounter + 1) % MAX_TWEETS });
+  }
+
+  tickFilters = () => {
     this.setState((prevState) => {
       const currentTimestamp = Date.now();
 
-      return {
-        announcements: _.filter(prevState.announcements, (announcement) => {
-          console.log('announcement', announcement);
-          return announcement.announcement && currentTimestamp - announcement.timestamp < (60 * 1000);
-        }),
-        tweets: _.filter(prevState.tweets, (tweet) => {
-          return tweet && currentTimestamp - tweet.timestamp < (60 * 1000);
-        }),
-        tweetRotateCounter: (prevState.tweetRotateCounter + 1) % MAX_TWEETS,
-      };
+      const announcements = _.filter(prevState.announcements, (announcement) => {
+        return announcement && currentTimestamp - announcement.timestamp < (60 * 1000);
+      });
+
+      const tweets = _.filter(prevState.tweets, (tweet) => {
+        return tweet && currentTimestamp - tweet.timestamp < (30 * 1000);
+      });
+
+      return { tweets, announcements };
     })
   }
 
   componentWillUnmount() {
     this.setState(() => {
       this.state.socket.destroy();
-      clearInterval(this.state.intervalId);
+      clearInterval(this.state.tweetRotatorId);
       return { socket: null };
     });
   }
@@ -71,8 +85,8 @@ export default class Wall extends Component {
     const timestamp = Date.now();
     this.setState({
       tweets: _.take([
-        { tweet, timestamp },
-        , ...this.state.tweets
+        { data: tweet, timestamp },
+        ...this.tweets
       ], MAX_TWEETS)
     })
   };
@@ -81,19 +95,24 @@ export default class Wall extends Component {
     const timestamp = Date.now();
     this.setState({
       announcements: _.take([
-        { tweet, timestamp },
-        ...this.state.announcements
+        { data: tweet, timestamp },
+        ...this.announcements
       ], MAX_ANNOUNCEMENTS)
     });
   }
 
   currentTweet = () => {
-    const currentTweet = this.state.tweets[this.state.tweetRotateCounter % this.state.tweets.length];
+    const currentTweet = this.tweets[this.state.tweetRotateCounter % this.tweets.length];
 
     if (currentTweet) {
-      return <Tweet modifier="large" tweet={currentTweet.tweet} />;
+      return <Tweet modifier="large" tweet={currentTweet.data} />;
     }
+  }
 
+  sidebar = () => {
+    return this.tweets.map(tweet =>
+      <Tweet key={tweet.data.id} tweet={tweet.data} />
+    );
   }
 
   render() {
@@ -111,9 +130,12 @@ export default class Wall extends Component {
             {this.currentTweet()}
           </div>
         </div>
+        <div className="Wall-sidebar">
+          {this.sidebar()}
+        </div>
       </div>
       <div className="Wall-announcements">
-        <Announcement tweets={this.state.announcements} />
+        <Announcement tweets={this.announcements} />
       </div>
     </div>;
   }

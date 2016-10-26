@@ -55,7 +55,7 @@ export default class Announcement extends Component {
     }
 
     return _.find(this.today.events, (event) => {
-      if (event.name === "talk" && tester(event)) {
+      if (event.type === "talk" && tester(event)) {
         return event;
       }
     });
@@ -119,7 +119,6 @@ export default class Announcement extends Component {
   }
 
   render() {
-    console.log(_.map(this.props.tweets, (t) => t.tweet))
     return <div className="Announcement">
       <div className="Stitches blue top" />
       <div className="Stitches blue left" />

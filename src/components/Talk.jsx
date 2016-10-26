@@ -49,7 +49,7 @@ export default class Talk extends Component {
     }
 
     return {
-      title: speaker.title,
+      title: speaker.talk,
       imageUrl: `/images/speakers/${speaker.first_name.toLowerCase()}-${speaker.last_name.toLowerCase()}.jpg`,
       name: `${speaker.first_name} ${speaker.last_name}`,
       twitter: `@${speaker.twitter}`,
