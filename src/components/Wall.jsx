@@ -8,7 +8,7 @@ import Announcement from './Announcement';
 
 import _ from 'lodash';
 
-const MAX_TWEETS = 5;
+const MAX_TWEETS = 10;
 const MAX_ANNOUNCEMENTS = 3;
 
 export default class Wall extends Component {
@@ -66,7 +66,7 @@ export default class Wall extends Component {
       });
 
       const tweets = _.filter(prevState.tweets, (tweet) => {
-        return tweet && currentTimestamp - tweet.timestamp < (30 * 1000);
+        return tweet;
       });
 
       return { tweets, announcements };
