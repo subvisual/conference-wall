@@ -21,13 +21,13 @@
       type: coffee-break
 
     - name: talk
-      start: "11:00"
-      end: "11:40"
+      start: "11:10"
+      end: "11:50"
       type: talk
       speaker: kwugirl
 
     - name: Break
-      start: "11:40"
+      start: "11:50"
       end: "12:00"
       type: break
 
