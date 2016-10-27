@@ -106,8 +106,8 @@ export default class Wall extends Component {
   }
 
   renderCurrentTweet = () => {
-    if (this.currentTweet()) {
-      return <Tweet modifier="large" tweet={this.currentTweet()} />;
+    if (this.currentTweet() && this.currentTweet().data) {
+      return <Tweet modifier="large" tweet={this.currentTweet().data} />;
     }
   }
 
