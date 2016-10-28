@@ -102,34 +102,34 @@
 
     - name: talk
       start: "10:20"
-      end: "11:00"
+      end: "11:20"
       speaker: wycats
       type: talk
 
     - name: Coffee Break
-      start: "11:00"
-      end: "11:20"
+      start: "11:20"
+      end: "11:40"
       type: break
 
     - name: talk
-      start: "11:20"
-      end: "12:00"
+      start: "11:40"
+      end: "12:20"
       speaker: hiro_asari
       type: talk
 
     - name: Break
-      start: "12:00"
-      end: "12:10"
+      start: "12:20"
+      end: "12:25"
       type: break
 
     - name: talk
-      start: "12:10"
-      end: "12:50"
+      start: "12:25"
+      end: "13:05"
       type: talk
       speaker: pat
 
     - name: Lunch
-      start: "12:50"
+      start: "13:05"
       end: "14:30"
 
     - name: "Lightning Talks Part 2"
