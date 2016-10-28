@@ -117,19 +117,14 @@
       speaker: hiro_asari
       type: talk
 
-    - name: Break
-      start: "12:20"
-      end: "12:25"
-      type: break
-
     - name: talk
-      start: "12:25"
-      end: "13:05"
+      start: "12:20"
+      end: "13:00"
       type: talk
       speaker: pat
 
     - name: Lunch
-      start: "13:05"
+      start: "13:00"
       end: "14:30"
 
     - name: "Lightning Talks Part 2"
