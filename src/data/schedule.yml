@@ -1,166 +1,136 @@
 - name: Day 1
-  date: Thursday, October 27th
+  date: Thursday, October 12th
   events:
     - name: Check-in
-      start: "8:30"
-      end: "9:15"
+      start: "9:00"
+      end: "9:45"
 
     - name: Opening
-      start: "9:15"
-      end: "9:30"
+      start: "9:45"
+      end: "10:00"
 
-    - name: talk
-      start: "9:30"
-      end: "10:30"
+    - name: "How to Tell When You're Tired"
+      start: "10:00"
+      end: "11:00"
       type: talk
-      speaker: martinfowler
+      speaker: frank_chimero
 
     - name: Coffee Break
-      start: "10:30"
-      end: "11:00"
+      start: "11:00"
+      end: "11:30"
       type: coffee-break
 
-    - name: talk
-      start: "11:10"
-      end: "11:50"
+    - name: "The <svg> of .svg"
+      start: "11:30"
+      end: "12:15"
       type: talk
-      speaker: kwugirl
+      speaker: SaraSoueidan
 
-    - name: Break
-      start: "12:00"
-      end: "12:10"
-      type: break
-
-    - name: talk
-      start: "12:10"
-      end: "12:50"
+    - name: "User Research for everyone"
+      start: "12:15"
+      end: "13:00"
       type: talk
-      speaker: chastell
+      speaker: arasb
 
     - name: Lunch
       start: "13:00"
-      end: "14:30"
-
-    - name: "Lightning Talks Part 1"
-      start: "14:30"
       end: "15:00"
-      type: talk
 
-    - name: talk
+    - name: "Design for Emotion"
       start: "15:00"
-      end: "15:40"
-      speaker: josemotanet
+      end: "15:45"
+      speaker: Upskydown
       type: talk
 
-    - name: Break
-      start: "15:40"
-      end: "16:00"
-      type: break
-
-    - name: talk
-      start: "16:00"
-      end: "16:40"
+    - name: "Solving layout problems with CSS Grid and friends"
+      start: "15:45"
+      end: "16:30"
+      speaker: rachelandrew
       type: talk
-      speaker: pragtob
 
     - name: Coffee Break
-      start: "16:40"
+      start: "16:30"
       end: "17:00"
       type: coffee-break
 
-    - name: talk
+    - name: "A Little Story About A Big Bang Redesign (Smashing Magazine’s 2017 Relaunch, a Case Study"
       start: "17:00"
-      end: "17:40"
+      end: "18:00"
       type: talk
-      speaker: girls
-      rails_girls: true
+      speaker: smashingmag
 
     - name: Break
-      start: "17:40"
-      end: "18:00"
+      start: "18:00"
+      end: "18:15"
       type: break
 
-    - name: Panel
-      start: "18:00"
-      end: "19:00"
+    - name: Mirror Quiz
+      start: "18:15"
+      end: "19:15"
       type: talk
 
-    - name: Karaoke Party
+    - name: MirrorConf Party
       start: "19:30"
       end: "02:00"
       type: party
-      sponsor: Red Light
+      sponsor: UTRUST
       location: Barhaus
       url: https://www.google.pt/maps/place/Barhaus/@41.5487655,-8.428981,17z/data=!3m1!4b1!4m5!3m4!1s0xd24fec2fefbe72f:0x6e47cb947142182a!8m2!3d41.5487615!4d-8.4267923?hl=en
 
 - name: Day 2
-  date: Friday, October 28th
+  date: Friday, October 13th
   events:
-    - name: Check-in
-      start: "9:00"
-      end: "10:00"
-
-    - name: talk
-      start: "10:20"
-      end: "11:20"
-      speaker: wycats
+    - name: TBA
+      start: "10:00"
+      end: "11:00"
+      speaker: gabrielvaldivia
       type: talk
 
     - name: Coffee Break
-      start: "11:20"
-      end: "11:40"
+      start: "11:00"
+      end: "11:30"
       type: break
 
-    - name: talk
-      start: "11:40"
-      end: "12:20"
-      speaker: hiro_asari
+    - name: "Evaluating Technology"
+      start: "11:30"
+      end: "12:15"
+      speaker: adactio
       type: talk
 
-    - name: talk
-      start: "12:20"
+    - name: "What's Your Roadmap?"
+      start: "12:15"
       end: "13:00"
       type: talk
-      speaker: pat
+      speaker: iamctodd
 
     - name: Lunch
       start: "13:00"
-      end: "14:30"
-
-    - name: "Lightning Talks Part 2"
-      start: "14:30"
       end: "15:00"
-      type: talk
 
-    - name: talk
+    - name: "Web Performance Kinetosis"
       start: "15:00"
-      end: "15:40"
+      end: "15:45"
       type: talk
-      speaker: caiosba
+      speaker: eduardoboucas
 
-    - name: Break
-      start: "15:40"
-      end: "16:00"
-      type: break
-
-    - name: talk
-      start: "16:00"
-      end: "16:40"
+    - name: "Home"
+      start: "15:45"
+      end: "16:30"
       type: talk
-      speaker: kerrizor
+      speaker: claudioguglieri
 
     - name: Coffee Break
-      start: "16:40"
+      start: "16:30"
       end: "17:00"
       type: break
 
-    - name: talk
+    - name: "Let's Work Together!"
       start: "17:00"
-      end: "17:40"
+      end: "18:00"
       type: talk
-      speaker: tenderlove
+      speaker: brad_frost
 
     - name: Closing
-      start: "17:40"
-      end: "18:00"
+      start: "18:00"
+      end: "18:30"
       type: break
