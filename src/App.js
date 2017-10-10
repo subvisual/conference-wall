@@ -9,11 +9,11 @@ import Wall from './components/Wall';
 
 let server;
 if (process.env.NODE_ENV === "production") {
-  server = 'rubyconfpt-wall-server.herokuapp.com:80';
+  server = 'mirrorconf-wall-server.herokuapp.com:80';
 } else {
   server = 'localhost:4000';
 }
-  server = 'rubyconfpt-wall-server.herokuapp.com:80';
+  server = 'mirrorconf-wall-server.herokuapp.com:80';
 
 class App extends Component {
   render() {
