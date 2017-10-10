@@ -1,127 +1,186 @@
-- first_name: PJ
-  last_name: Hagerty
+- first_name: Tiago
+  last_name: Pedras
   title: Master of Ceremonies
-  twitter: aspleenic
-  github: aspleenic
+  twitter: tiagopedras
+  github: tiagopedras
   classes: mc
   mc: true
 
-- first_name: Pat
-  last_name: Allan
-  title: Gelato Connoisseur, Pancake Master, Ruby Developer
-  twitter: pat
-  github: pat
-  talk: "Open Source: Power and the Passion"
+- first_name: Aras
+  last_name: Bilgen
+  title: Head of Design at Garanti
+  twitter: arasb
+  talk: "User Research for everyone"
+  abstract: >
+    You can champion for great user research, even if you are not a designer or
+    a researcher! We will cover a wide range of user research methods, learn to
+    avoid common mistakes, and do case studies together to see how leading
+    companies plan, execute and analyse user research in three simple steps.
+
+- first_name: Brad
+  last_name: Frost
+  title: Author of Atomic Design
+  twitter: brad_frost
+  github: bradfrost
+  talk: "Let's Work Together!"
+  abstract: >
+    Nobody works alone in a vacuum, and successful work hinges on how well a
+    team communicates and collaborates with each other. This talk will explore
+    many methods, tools, and techniques teams use to produce great web
+    experiences. How do front-end development teams make sure they write clean
+    and consistent code together? How do designers ensure colors, typography,
+    and other design elements are used correctly? What deliverables should be
+    created in an effective web design process? How are decisions communicated
+    with the team, stakeholders, and the broader organization? There are no
+    “right” answers to these questions, but this talk will cover some important
+    principles and helpful tactics to help your team make great work together.
+
+- first_name: C Todd
+  last_name: Lombardo
+  title: Chief Design Strategist at Fresh Tilled Soil
+  twitter: iamctodd
+  talk: "What's Your Roadmap?"
+  abstract: >
+    A product roadmap is not a release plan, nor a Gantt chart, so why do so
+    many product teams conflate the two? Using case studies and personal
+    experience, this talk walks through what a roadmaps is and how teams can
+    leverage them for a successful product future.
+
+- first_name: Claudio
+  last_name: Guglieri
+  title: Design Director at Microsoft
+  twitter: claudioguglieri
+  talk: "Home"
+  abstract: >
+    “Home” is a talk about users’ digital life and designers’ roles in shaping
+    them for the best. Home, understood as “the place where one lives
+    permanently as a member of a household” is no longer a physical space for a
+    vast group of people. Many of us find comfort in digital environments and
+    use them for work and leisure and sometimes support.This talk aims to dig
+    deeper into that relationship over time and discuss the key factors that
+    will help designers keep and improve that connection between their products
+    and their users.
+
+- first_name: Eduardo
+  last_name: Bouças
+  title: Senior Engineer at Dadi
+  twitter: eduardoboucas
+  github: eduardoboucas
+  talk: Web Performance Kinetosis
+  abstract: >
+    Kinetosis, commonly known as motion sickness, is a condition in which a
+    disagreement exists between visually perceived movement and the vestibular
+    system’s sense of movement. Similarly, the way you think your website moves
+    may be radically different from what your audience is actually
+    experiencing.
+
+- first_name: Frank
+  last_name: Chimero
+  title: Designer, Writer and Illustrator
+  twitter: frank_chimero
+  talk: "How to Tell When You're Tired"
+  abstract: >
+    The most famous story about work comes from Greek myth: Sisyphus woke each
+    morning to push a rock up a mountain, then the next day found the rock back
+    at the bottom, his progress gone and the challenge reset. After 20 years of
+    making websites, his story sounds familiar to me. If expertise is
+    impossible because everything changes so frequently, how does a person
+    develop wisdom about their work? How do you not burn out? Are these silly
+    questions? Maybe, but change begins with diligent effort and a new
+    perspective on the work.
+
+- first_name: Gabriel
+  last_name: Valdivia
+  title: Facebook VR Designer
+  twitter: gabrielvaldivia
+  talk: TBA
   abstract: TBA
 
-- first_name: Hiro
-  last_name: Asari
-  title: Hacker on Travis CI and JRuby
-  twitter: hiro_asari
-  github: BanzaiMan
-  talk: Control Theory
-  abstract: TBA
+- first_name: Henry
+  last_name: Daubrez
+  title: Design Director at Dogstudio
+  twitter: Upskydown
+  talk: "Design for Emotion"
+  abstract: >
+    If you're a designer in 2017, chances are you fully integrate data and KPI
+    in your daily life. That being said, if design’s first role is all about
+    solving issues and making everybody's life easier through on point and
+    smart decisions, we, at the very core of our human nature, are totally
+    illogical and emotion-driven creatures. Let's break things, do a bit of
+    neuroscience, and explore a painting-inspired take on the interactive
+    design process.
 
-- first_name: Martin
-  last_name: Fowler
-  title: Software Development Loudmouth
-  twitter: martinfowler
-  github: martinfowler
-  talk: Software Design in the 21st Century
-  abstract: In the last decade or so we've seen a number of new ideas added to the mix to help us effectively design our software. Patterns help us capture the solutions and rationale for using them. Refactoring allows us to alter the design of a system after the code is written. Agile methods, in particular Extreme Programming, give us a highly iterative and evolutionary approach which is particularly well suited to changing requirements and environments. Martin Fowler has been a leading voice in these techniques and will give a suite of short talks featuring various aspects about his recent thinking about how these and other developments affect our software development.
+- first_name: Jeremy
+  last_name: Keith
+  title: Co-found and technical lead at Clearleft
+  twitter: adactio
+  github: adactio
+  talk: "Evaluating Technology"
+  abstract: >
+    We work with technology every day. And every day it seems like there’s more
+    and more technology to understand: graphic design tools, build tools,
+    frameworks and libraries, not to mention new HTML, CSS and JavaScript
+    features landing in browsers. How should we best choose which technologies to
+    invest our time in? When we decide to weigh up the technology choices that
+    confront us, what are the best criteria for doing that? This talk will help
+    you evaluate tools and technologies in a way that best benefits the people
+    who use the websites that we are designing and developing. Let’s take a look
+    at some of the hottest new web technologies like service workers and web
+    components. Together we will dig beneath the hype to find out whether they
+    will really change life on the web for the better.
 
-- first_name: Yehuda
-  last_name: Katz
-  title: Ember.js Creator and Open Source Addict
-  twitter: wycats
-  github: wycats
-  talk: "Zen and the Art of Package Management"
-  abstract: TBA
+- first_name: Rachel
+  last_name: Andrew
+  title: Web Developer, Speaker and Author
+  twitter: rachelandrew
+  talk: "Solving layout problems with CSS Grid and friends"
+  abstract: >
+    CSS Grid Layout launched into the majority of our browsers in 2017. As
+    designers and developers have started to use Grid I’ve been answering a lot
+    of questions about the specification. In this talk I’ll answer some of the
+    common questions about Grid Layout in production - from dealing with old
+    browsers to what might come next in CSS for layout. There will be plenty of
+    practical tips for you to use in your projects today.
 
-- first_name: Marie
-  last_name: Kochsiek
-  title: Programmer & Social Scientist
-  twitter: lila_luca
-  github: lilaluca
-  talk: talk
-  abstract: TBA
+- first_name: Sara
+  last_name: Soueidan
+  title: Front-End Web Developer
+  twitter: SaraSoueidan
+  github: SaraSoueidan
+  talk: "The <svg> of .svg"
+  abstract: >
+    Scalable Vector Graphics, or Documents? Both. SVG may be known more as an
+    image format, perfect for displaying icons and illustrations, including
+    animated ones. But there are other aspects of SVG that make it as powerful
+    as it is, and those aspects stem from its nature as a document format, as
+    well as its graphical nature. In this talk, Sara is going to highlight some
+    SVG's document side and show you how it can be leveraged to improve and
+    optimize the way we deliver content such as text and images for the Web,
+    including SVG itself.
 
-- first_name: Thea
-  last_name: Kupler
-  title: Changer & Programmer to be, Sustainability Enthusiast
-  twitter: theatanzt
-  github: theaamanda
-  talk: talk
-  abstract: TBA
-
-- first_name: Kerri
-  last_name: Miller
-  title: Software Developer, Team Lead, Puppeteer, Sous Chef
-  twitter: kerrizor
-  github: kerrizor
-  talk: "Crescent Wrenches and Debuggers: Building Your Own Toolkit For Rational Inquiry"
-  abstract: TBA
-
-- first_name: José
-  last_name: Mota
-  title: Ruby developer and educator
-  twitter: josemotanet
-  github: josemotanet
-  talk: "Take the time"
-  abstract: TBA
-
-- first_name: Aaron
-  last_name: Patterson
-  title: Ruby and Rails Core Teams
-  twitter: tenderlove
-  github: tenderlove
-  talk: Methods of Memory Management in MRI
-  abstract: "Let's talk about MRI's GC! In this talk we will cover memory management algorithms in MRI. We will cover how objects are allocated and how they are freed. We will start by looking at Ruby's memory layout, including page allocation and object allocations within those pages. Next we'll cover collection algorithms used by MRI starting with the mark and sweep algorithm, followed by generational collection, and the tri color abstraction. Finally we'll cover experimental developments for the GC like heap splitting. Expect to leave this talk with heaps of pointers to add to your remembered set!"
-
-- first_name: Tobias
-  last_name: Pfeiffer
-  title: Developer, Open-Source-Enthusiast, Human
-  twitter: pragtob
-  github: pragtob
-  talk: "Elixir & Phoenix – fast, concurrent and explicit"
-  abstract: TBA
-
-- first_name: Caio
-  last_name: Sacramento
-  title: Software Engineer at Meedan, Headbanger
-  twitter: caiosba
-  github: caiosba
-  talk: "Using GraphQL and Relay for hybrid Ruby on Rails applications"
-  abstract: TBA
-
-- first_name: Nada
-  last_name: Salama
-  title: Computer engineering and RGSoC student
-  twitter: Nada_Ashraf96
-  github: Nada1996
-  talk: talk
-  abstract: TBA
-
-- first_name: Mayar
-  last_name: Saleh
-  title: Computer engineering and RGSoC student
-  twitter: MayarAlaa122
-  github: MayarAlaa
-  talk: talk
-  abstract: TBA
-
-- first_name: Piotr
-  last_name: Szotkowski
-  title: Hacker scientist. Assistant professor at Warsaw University of Technology
-  twitter: chastell
-  github: chastell
-  talk: "They Hear Me Typin’, They Hatin’"
-  abstract: TBA
-
-- first_name: Katherine
-  last_name: Wu
-  title: Brightly colored, Curious, and Strong
-  twitter: kwugirl
-  github: kwugirl
-  talk: "Ask vs. Guess Culture Communication"
-  abstract: TBA
+- first_name: Vitaly
+  last_name: Friedman
+  title: "Editor-in-chief of Smashing Magazine"
+  twitter: smashingmag
+  talk: "A Little Story About A Big Bang Redesign (Smashing Magazine’s 2017 Relaunch, a Case Study"
+  abstract: >
+    You’ve been there: big bang redesigns are usually a very, very bad idea.
+    Redesigning and rebuilding an existing website from scratch is risky and
+    unpredictable, and in many cases the level of complexity is highly
+    underrated and underestimated. In mid-2016, Smashing Magazine has decided
+    to make a big switch from the existing WordPress setup to an entirely new
+    design, entirely new architecture (JAM Stack) and an entirely new,
+    GitHub-based, editorial workflow.  In this talk, Vitaly Friedman,
+    editor-in-chief and co-founder of Smashing Magazine, will share some of the
+    insights into Smashing Magazine’s Relaunch in 2017 — with decisions made,
+    failures, successes, lessons learned and shady’n'dirty techniques used
+    along the way. Among other things, you’ll learn how Smashing Magazine uses
+    HTTP/2, service workers and server-less architecture with static site
+    generators to boost performance, with a dash of React, Preact, CSS Grid,
+    calc(), a bit dirty CSS and the peek into the new GitHub-based editorial
+    workflow here and there. Beware: the session will contain at least 27
+    illustrations of cats!  Keep in mind: you won’t be able to unsee the things
+    you’ll see in this session. Yes, it’s going to be dirty, tricky and
+    horribly annoying at times. You’ll leave with a toolbox of practical
+    techniques that you’ll be able to apply to your work right away. And
+    potentially some tips for saving money on airfare, too!
