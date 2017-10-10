@@ -16,8 +16,7 @@ export default class Announcement extends Component {
   }
 
   static defaultProps = {
-    tweets: []
-  }
+    tweets: [] }
 
   constructor(props) {
     super(props);
@@ -120,11 +119,6 @@ export default class Announcement extends Component {
 
   render() {
     return <div className="Announcement">
-      <div className="Stitches blue top" />
-      <div className="Stitches blue left" />
-      <div className="Stitches blue right" />
-      <div className="Stitches blue bottom" />
-
       <CSSTransitionGroup transitionName="Announcement-transition" transitionEnterTimeout={1500} transitionLeaveTimeout={750}>
         {this.content()}
       </CSSTransitionGroup>

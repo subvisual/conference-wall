@@ -120,13 +120,9 @@ export default class Wall extends Component {
   render() {
     return <div className="Wall">
       <div className="Wall-twitter">
-        <div className="Stitches red top" />
-        <div className="Stitches red left" />
-        <div className="Stitches red right" />
-
         <div className="Wall-main">
           <div className="Wall-logo">
-            <img src="/images/logo.png" alt="RubyConf PT logo" />
+            <img src="/images/logo.svg" alt="MirrorConf logo" />
           </div>
           <div className="Wall-highlight">
             {this.renderCurrentTweet()}
