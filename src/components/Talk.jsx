@@ -14,6 +14,10 @@ export default class Talk extends Component {
     talk: null
   }
 
+  parameterize(string) {
+    return string.toLowerCase().replace(/\s+/g, '-')
+  }
+
   getSpeaker(handle) {
     return _.find(Speakers, { twitter: handle });
   }
@@ -44,13 +48,13 @@ export default class Talk extends Component {
   getTalkData(talk) {
     const speaker = this.getSpeaker(talk.speaker);
 
-    if (!speaker) {
-      return;
-    }
+    if (!speaker) return;
+
+    const name = this.parameterize(`${speaker.first_name} ${speaker.last_name}`);
 
     return {
       title: speaker.talk,
-      imageUrl: `/images/speakers/${speaker.first_name.toLowerCase()}-${speaker.last_name.toLowerCase()}.jpg`,
+      imageUrl: `/images/speakers/${name}.jpg`,
       name: `${speaker.first_name} ${speaker.last_name}`,
       twitter: `@${speaker.twitter}`,
       start: talk.start,
