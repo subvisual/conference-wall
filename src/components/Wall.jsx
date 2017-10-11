@@ -122,7 +122,7 @@ export default class Wall extends Component {
       <div className="Wall-twitter">
         <div className="Wall-main">
           <div className="Wall-logo">
-            <img src="/images/logo.svg" alt="MirrorConf logo" />
+            <img src="/images/logo.png" alt="MirrorConf logo" />
           </div>
           <div className="Wall-highlight">
             {this.renderCurrentTweet()}
