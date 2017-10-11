@@ -52,6 +52,7 @@
     "react-dom": "^15.3.2",
     "react-slick": "^0.14.5",
     "react-tweet": "^1.0.22",
+    "react-videojs": "^0.0.3",
     "recursive-readdir": "2.1.0",
     "rimraf": "2.5.4",
     "sass-loader": "^4.0.2",
