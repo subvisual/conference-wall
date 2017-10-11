@@ -5105,7 +5105,7 @@ react-slick:
 
 react-tweet@^1.0.22:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-tweet/-/react-tweet-1.1.0.tgz#28b5a8747e0e0213012d5ed58161f6db70ef8a2e"
+  resolved "https://registry.yarnpkg.com/react-tweet/-/react-tweet-1.0.22.tgz#c6b82a92fa577aad1666376631733e31fcb721e2"
   dependencies:
     babel "~5.8.23"
     babel-runtime "~5.8.20"
