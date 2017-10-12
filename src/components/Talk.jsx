@@ -64,10 +64,11 @@ export default class Talk extends Component {
 
   renderRegularTalk = () => {
     const data = this.getTalkData(this.props.talk);
+    const photoStyle = { backgroundImage: `url('${data.imageUrl}')` };
 
     return <div className="Talk">
       <div className="Flex row alignCenter">
-        <img src={data.imageUrl} alt={data.name} className="Talk-speakerPhoto" />
+        <div style={photoStyle} title={data.name} className="Talk-speakerPhoto" />
         <div className="Flex column alignStart">
           <div className="Talk-title">{data.title}</div>
           <div className="Talk-info">
