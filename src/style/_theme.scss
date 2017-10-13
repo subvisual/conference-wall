@@ -1,17 +1,2 @@
 $font-family-sans: 'proxima-nova', sans-serif;
 $font-family-serif: 'matrix-ii', serif;
-
-html,
-body,
-#root {
-  height: 100%;
-
-  min-height: 100%;
-  font-family: $font-family-serif;
-}
-
-.wf-active,
-button {
-  // font-family: $font-family;
-}
-
