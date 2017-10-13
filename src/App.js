@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import './App.scss';
 import './style/Flex.scss';
-import './style/utilities.scss';
 
 import Wall from './components/Wall';
 
