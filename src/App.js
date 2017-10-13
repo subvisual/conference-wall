@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './App.scss';
-import './style/Stitches.scss';
 import './style/Flex.scss';
 import './style/utilities.scss';
 
