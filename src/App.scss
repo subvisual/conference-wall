@@ -1,3 +1,5 @@
+@import "./style/theme";
+
 $App-bg-color: #081340;
 
 .App {
@@ -5,6 +7,9 @@ $App-bg-color: #081340;
 
   text-align: center;
   background-color: $App-bg-color;
+
+  font-family: $font-family-sans;
+  font-size: $font-size-base;
 }
 
 .App-logo {
