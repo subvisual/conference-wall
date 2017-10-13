@@ -1,31 +1,23 @@
+$Wall-social-height: 60%;
+$Wall-sidebar-width: 30%;
+
 .Wall {
   overflow: hidden;
+  width: 100%;
   height: 100%;
 }
 
-.Wall-twitter {
-  display: flex;
-  flex-direction: row;
+.Wall-social {
   position: relative;
+  width: 100%;
+  height: $Wall-social-height;
 
   overflow: hidden;
-
-  height: calc(100% - 400px);
-}
-
-.Wall-announcements {
-  height: 400px;
-}
-
-.Wall-main {
-  flex-basis: 100%;
-  padding: 40px;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .Wall-logo {
+  width: 100%;
+  height: 30%;
   padding-top: 40px;
   padding-bottom: 80px;
 
@@ -34,9 +26,26 @@
   }
 }
 
-.Wall-sidebar {
-  flex-basis: 30%;
-  overflow: hidden;
+.Wall-highlight {
+  width: auto;
+  height: 100% - $Wall-sidebar-width;
+  margin-right: $Wall-sidebar-width;
+  padding: 40px;
+}
+
+.Wall-stream {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: $Wall-sidebar-width;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: lighten(#fd7d57, 30%);
   padding: 80px 80px 80px 40px;
+}
+
+.Wall-announcements {
+  width: 100%;
+  height: 100% - $Wall-social-height;
 }

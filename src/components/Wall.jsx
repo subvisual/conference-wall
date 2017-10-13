@@ -119,16 +119,14 @@ export default class Wall extends Component {
 
   render() {
     return <div className="Wall">
-      <div className="Wall-twitter">
-        <div className="Wall-main">
-          <div className="Wall-logo">
-            <img src="/images/logo.png" alt="MirrorConf logo" />
-          </div>
-          <div className="Wall-highlight">
-            {this.renderCurrentTweet()}
-          </div>
+      <div className="Wall-social">
+        <div className="Wall-logo">
+          <img src="/images/logo.png" alt="MirrorConf logo" />
         </div>
-        <div className="Wall-sidebar">
+        <div className="Wall-highlight">
+          {this.renderCurrentTweet()}
+        </div>
+        <div className="Wall-stream">
           {this.sidebar()}
         </div>
       </div>
