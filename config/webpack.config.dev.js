@@ -304,6 +304,13 @@ module.exports = {
               'sass-loader'
             ),
           },
+          // Adds support for importing data from YAML files
+          // (with extension .yml or .yaml)
+          {
+            test: [/\.yml$/, /\.yaml$/],
+            include: paths.appSrc,
+            loader: require.resolve("yaml-loader")
+          },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
           // In production, they would get copied to the `build` folder.

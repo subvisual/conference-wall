@@ -8,7 +8,7 @@ import './Announcement.scss';
 import Tweet from './Tweet';
 import Talk from './Talk';
 
-const Schedule = require('json!yaml!../data/schedule.yml');
+import Schedule from '../data/schedule.yml';
 
 export default class Announcement extends Component {
   static propTypes = {

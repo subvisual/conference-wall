@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import './Talk.scss';
 
-const Speakers = require('json!yaml!../data/speakers.yml');
+import Speakers from '../data/speakers.yml';
 
 export default class Talk extends Component {
   static propTypes = {
