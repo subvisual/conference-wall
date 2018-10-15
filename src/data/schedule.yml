@@ -1,136 +1,195 @@
-- name: Day 1
-  date: Thursday, October 12th
+- date: 2018-10-18
   events:
     - name: Check-in
       start: "9:00"
-      end: "9:45"
+      end: "9:50"
 
     - name: Opening
-      start: "9:45"
+      start: "9:50"
       end: "10:00"
 
-    - name: "How to Tell When You're Tired"
+    - name: "Design is a team sport"
       start: "10:00"
-      end: "11:00"
+      end: "10:45"
       type: talk
-      speaker: frank_chimero
+      speaker: jmspool
 
-    - name: Coffee Break
-      start: "11:00"
+    - name: "TBA"
+      start: "10:45"
       end: "11:30"
-      type: coffee-break
+      type: talk
+      speaker: sniffles
 
-    - name: "The <svg> of .svg"
+    - name: Talk Shop
       start: "11:30"
       end: "12:15"
-      type: talk
-      speaker: SaraSoueidan
+      type: talk-shop
+      speakers:
+        - jmspool
+        - sniffles
 
-    - name: "User Research for everyone"
+    - name: Coffee Break
+      start: "11:30"
+      end: "12:15"
+      type: coffee-break
+      sponsor: xing
+
+    - name: "Hurdles of Junior Developers and How To Overcome Them"
       start: "12:15"
       end: "13:00"
       type: talk
-      speaker: arasb
+      speaker: girls
 
     - name: Lunch
       start: "13:00"
       end: "15:00"
 
-    - name: "Design for Emotion"
+    - name: "Clarity in Collaboration"
       start: "15:00"
       end: "15:45"
-      speaker: Upskydown
+      speaker: arnekittler
       type: talk
 
-    - name: "Solving layout problems with CSS Grid and friends"
+    - name: Talk Shop
       start: "15:45"
-      end: "16:30"
-      speaker: rachelandrew
-      type: talk
-
-    - name: Coffee Break
-      start: "16:30"
-      end: "17:00"
-      type: coffee-break
-
-    - name: "A Little Story About A Big Bang Redesign (Smashing Magazine’s 2017 Relaunch, a Case Study"
-      start: "17:00"
-      end: "18:00"
-      type: talk
-      speaker: smashingmag
+      end: "16:00"
+      type: talk-shop
+      speakers:
+        - girls
+        - arnekittler
 
     - name: Break
+      start: "15:45"
+      end: "16:00"
+
+    - name: "Ethics & Power: Understanding the Role of Shame in UX Research"
+      start: "16:00"
+      end: "16:45"
+      type: talk
+      speaker: vcastillo630
+
+    - name: Coffee Break
+      start: "16:45"
+      end: "17:15"
+      type: coffee-break
+      sponsor: xing
+
+    - name: "Even More CSS Secrets"
+      start: "17:15"
+      end: "18:00"
+      type: talk
+      speaker: LeaVerou
+
+    - name: Talk Shop
       start: "18:00"
       end: "18:15"
-      type: break
+      type: talk-shop
+      speakers:
+        - vcastillo630
+        - LeaVerou
 
     - name: Mirror Quiz
       start: "18:15"
-      end: "19:15"
-      type: talk
+      end: "19:00"
+
+    - name: Closing
+      start: "19:00"
+      end: "20:00"
 
     - name: MirrorConf Party
-      start: "19:30"
+      start: "21:00"
       end: "02:00"
       type: party
-      sponsor: UTRUST
-      location: Barhaus
-      url: https://www.google.pt/maps/place/Barhaus/@41.5487655,-8.428981,17z/data=!3m1!4b1!4m5!3m4!1s0xd24fec2fefbe72f:0x6e47cb947142182a!8m2!3d41.5487615!4d-8.4267923?hl=en
+      sponsor: ginetta
+      location: Casa Velha, Parque da Ponte
+      url: https://www.google.pt/maps/place/ArtBar+Old+House/@41.5537646,-8.3762957,17z/data=!3m1!4b1!4m5!3m4!1s0xd24fc6ac9da79bd:0x7a403b0ed0998a69!8m2!3d41.5537606!4d-8.3741017
 
-- name: Day 2
-  date: Friday, October 13th
+- date: 2018-10-19
   events:
+    - name: Check-in
+      start: "9:00"
+      end: "9:50"
+
+    - name: Opening
+      start: "9:50"
+      end: "10:00"
+
     - name: TBA
       start: "10:00"
-      end: "11:00"
-      speaker: gabrielvaldivia
+      end: "10:45"
+      speaker: smashingmag
       type: talk
 
-    - name: Coffee Break
-      start: "11:00"
+    - name: "Preprocessors, Components, and CSS in JS or: How I Learned to Stop Worrying and Love the Website"
+      start: "10:45"
       end: "11:30"
-      type: break
+      speaker: jackiebackwards
+      type: talk
 
-    - name: "Evaluating Technology"
+    - name: Talk Shop
       start: "11:30"
       end: "12:15"
-      speaker: adactio
-      type: talk
+      type: talk-shop
+      speakers:
+        - smashingmag
+        - jackiebackwards
 
-    - name: "What's Your Roadmap?"
+    - name: Coffee Break
+      start: "11:30"
+      end: "12:15"
+      type: coffee-break
+      sponsor: xing
+
+    - name: "Designing Calm Technology"
       start: "12:15"
       end: "13:00"
+      speaker: caseorganic
       type: talk
-      speaker: iamctodd
 
     - name: Lunch
       start: "13:00"
       end: "15:00"
 
-    - name: "Web Performance Kinetosis"
+    - name: "Avoid Artic Expeditions: Ways to do research together"
       start: "15:00"
       end: "15:45"
       type: talk
-      speaker: eduardoboucas
+      speaker: arasb
 
-    - name: "Home"
+    - name: Talk Shop
       start: "15:45"
-      end: "16:30"
+      end: "16:00"
+      type: talk-shop
+      speakers:
+        - caseorganic
+        - arasb
+
+    - name: "Crafting Web Comics with Ember"
+      start: "16:00"
+      end: "16:45"
       type: talk
-      speaker: claudioguglieri
+      speaker: jjordan_dev
 
     - name: Coffee Break
-      start: "16:30"
-      end: "17:00"
-      type: break
+      start: "16:45"
+      end: "17:15"
+      type: coffee-break
+      sponsor: xing
 
-    - name: "Let's Work Together!"
-      start: "17:00"
+    - name: "How to Build an Atomic Bomb"
+      start: "17:15"
       end: "18:00"
       type: talk
-      speaker: brad_frost
+      speaker: monteiro
+
+    - name: Talk Shop
+      start: "18:00"
+      end: "18:15"
+      type: talk-shop
+      speakers:
+        - jjordan_dev
+        - monteiro
 
     - name: Closing
-      start: "18:00"
-      end: "18:30"
-      type: break
+      start: "18:15"
+      end: "19:00"
