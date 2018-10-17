@@ -38,8 +38,8 @@ export default class Announcement extends Component {
 
   atInterval = () => {
     this.setState({
-      currentTalk: extractEvent(Schedule[0].events[2]),
-      upcomingTalk: extractEvent(Schedule[0].events[3]),
+      currentTalk: extractEvent(this.getCurrentTalk()),
+      upcomingTalk: extractEvent(this.getUpcomingTalk()),
       counter: (this.state.counter + 1) % 3,
     });
   }

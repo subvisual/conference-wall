@@ -10,6 +10,8 @@ function getEventImagesPaths(rawEvent, speakers) {
 }
 
 export function extractEvent(rawEvent) {
+  if (!rawEvent) return;
+
   const speakers = rawEvent.speakers.map(s => getSpeakerBy({ twitter: s }))
 
   return {
