@@ -8,7 +8,14 @@ import Speakers from '../data/speakers.yml';
 
 export default class Talk extends Component {
   static propTypes = {
-    talk: PropTypes.object
+    endsAt: PropTypes.object.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+    speaker: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      twitter: PropTypes.string.isRequired,
+    }).isRequired,
+    startsAt: PropTypes.object.isRequired,
+    title: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
@@ -64,18 +71,18 @@ export default class Talk extends Component {
   }
 
   renderRegularTalk = () => {
-    const data = this.getTalkData(this.props.talk);
-    const photoStyle = { backgroundImage: `url('${data.imageUrl}')` };
+    const { endsAt, imageUrl, speaker, startsAt, title } = this.props;
+    const photoStyle = { backgroundImage: `url('${imageUrl}')` };
 
     return <div className="Talk">
       <div className="Flex row alignCenter">
-        <div style={photoStyle} title={data.name} className="Talk-speakerPhoto" />
+        <div style={photoStyle} title={title} className="Talk-speakerPhoto" />
         <div className="Flex column alignStart">
-          <div className="Talk-title">{data.title}</div>
+          <div className="Talk-title">{title}</div>
           <div className="Talk-info">
-            <span className="Talk-speaker">{data.name}</span>
-            <span className="Talk-twitter">{data.twitter}</span>
-            <span className="Talk-time">{data.start} - {data.end}</span>
+            <span className="Talk-speaker">{speaker.name}</span>
+            <span className="Talk-twitter">{speaker.twitter}</span>
+            <span className="Talk-time">{startsAt} - {endsAt}</span>
           </div>
         </div>
       </div>
@@ -108,7 +115,7 @@ export default class Talk extends Component {
   }
 
   render() {
-    if (this.props.talk.speaker === "girls") {
+    if (this.props.speaker === "girls") {
       return this.renderRailsGirlsTalk();
     } else {
       return this.renderRegularTalk();

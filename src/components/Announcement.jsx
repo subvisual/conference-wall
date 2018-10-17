@@ -37,8 +37,8 @@ export default class Announcement extends Component {
 
   atInterval = () => {
     this.setState({
-      currentTalk: this.getCurrentTalk(),
-      upcomingTalk: this.getUpcomingTalk(),
+      currentTalk: Schedule[0].events[2],
+      upcomingTalk: Schedule[0].events[3],
       counter: (this.state.counter + 1) % 3,
     });
   }
