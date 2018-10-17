@@ -4,7 +4,7 @@ export function extractEvent(rawEvent) {
   const speakers = rawEvent.speakers.map(s => getSpeakerBy({ twitter: s }))
   const imagePath = speakers[0] ? speakers[0].imagePath : undefined;
 
-  const extractedEvent = {
+  return {
     imagePath,
     speakers,
     endsAt: rawEvent.end,
@@ -12,10 +12,6 @@ export function extractEvent(rawEvent) {
     title: rawEvent.title,
     type: rawEvent.type,
   }
-  console.log("Raw event", rawEvent);
-  console.log("Extracted event", extractedEvent);
-
-  return extractedEvent;
 }
 
 export default {

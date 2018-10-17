@@ -16,10 +16,6 @@ function extractSpeaker(rawSpeaker) {
   }
 }
 
-function getAllSpeakers() {
-  return rawSpeakers.map(extractSpeaker);
-}
-
 export function getSpeakerBy(clauses) {
   const speaker = _.find(rawSpeakers, clauses);
 
