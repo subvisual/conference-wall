@@ -6,7 +6,7 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 import './Announcement.scss';
 
-import Event from '../models/events'
+import { extractEvent } from '../models/events'
 import Tweet from './Tweet';
 import Talk from './Talk';
 
@@ -38,8 +38,8 @@ export default class Announcement extends Component {
 
   atInterval = () => {
     this.setState({
-      currentTalk: Event.extract(Schedule[0].events[2]),
-      upcomingTalk: Event.extract(Schedule[0].events[3]),
+      currentTalk: extractEvent(Schedule[0].events[6]),
+      upcomingTalk: extractEvent(Schedule[0].events[3]),
       counter: (this.state.counter + 1) % 3,
     });
   }
@@ -84,12 +84,14 @@ export default class Announcement extends Component {
   }
 
   renderCurrentTalk = () => {
-    if (this.state.currentTalk) {
-      return <div className="Announcement-talk">
-        <div key="currentTalk" className="Announcement-header">Now on stage</div>
-        <Talk {...this.state.currentTalk} />
-      </div>;
-    }
+    if (!this.state.currentTalk) return
+
+    console.log("Current talk:", this.state.currentTalk)
+
+    return <div className="Announcement-talk">
+      <div key="currentTalk" className="Announcement-header">Now on stage</div>
+      <Talk {...this.state.currentTalk} />
+    </div>;
   }
 
   renderUpcomingTalk = () => {
