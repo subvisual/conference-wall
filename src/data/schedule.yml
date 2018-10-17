@@ -12,13 +12,15 @@
       start: "10:00"
       end: "10:45"
       type: talk
-      speaker: jmspool
+      speakers:
+        - jmspool
 
     - name: "TBA"
       start: "10:45"
       end: "11:30"
       type: talk
-      speaker: sniffles
+      speakers:
+        - sniffles
 
     - name: Talk Shop
       start: "11:30"
@@ -38,7 +40,11 @@
       start: "12:15"
       end: "13:00"
       type: talk
-      speaker: girls
+      speakers:
+        - Sabin_E
+        - alinaleuca
+      images:
+        - rails-girls
 
     - name: Lunch
       start: "13:00"
@@ -47,15 +53,20 @@
     - name: "Clarity in Collaboration"
       start: "15:00"
       end: "15:45"
-      speaker: arnekittler
       type: talk
+      speakers:
+        - arnekittler
 
     - name: Talk Shop
       start: "15:45"
       end: "16:00"
       type: talk-shop
       speakers:
-        - girls
+        - Sabin_E
+        - alinaleuca
+        - arnekittler
+      images:
+        - rails-girls
         - arnekittler
 
     - name: Break
@@ -66,7 +77,8 @@
       start: "16:00"
       end: "16:45"
       type: talk
-      speaker: vcastillo630
+      speakers:
+        - vcastillo630
 
     - name: Coffee Break
       start: "16:45"
@@ -78,7 +90,8 @@
       start: "17:15"
       end: "18:00"
       type: talk
-      speaker: LeaVerou
+      speakers:
+        - LeaVerou
 
     - name: Talk Shop
       start: "18:00"
@@ -117,14 +130,16 @@
     - name: TBA
       start: "10:00"
       end: "10:45"
-      speaker: smashingmag
       type: talk
+      speakers:
+        - smashingmag
 
     - name: "Preprocessors, Components, and CSS in JS or: How I Learned to Stop Worrying and Love the Website"
       start: "10:45"
       end: "11:30"
-      speaker: jackiebackwards
       type: talk
+      speaker:
+        - jackiebackwards
 
     - name: Talk Shop
       start: "11:30"
@@ -143,8 +158,9 @@
     - name: "Designing Calm Technology"
       start: "12:15"
       end: "13:00"
-      speaker: caseorganic
       type: talk
+      speakers:
+        - caseorganic
 
     - name: Lunch
       start: "13:00"
@@ -154,7 +170,8 @@
       start: "15:00"
       end: "15:45"
       type: talk
-      speaker: arasb
+      speakers:
+        - arasb
 
     - name: Talk Shop
       start: "15:45"
@@ -168,7 +185,8 @@
       start: "16:00"
       end: "16:45"
       type: talk
-      speaker: jjordan_dev
+      speakers:
+        - jjordan_dev
 
     - name: Coffee Break
       start: "16:45"
@@ -180,7 +198,8 @@
       start: "17:15"
       end: "18:00"
       type: talk
-      speaker: monteiro
+      speakers:
+        - monteiro
 
     - name: Talk Shop
       start: "18:00"
