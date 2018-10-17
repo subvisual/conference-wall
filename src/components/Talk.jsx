@@ -62,25 +62,6 @@ export default class Talk extends Component {
     }
   }
 
-  renderRegularTalk = () => {
-    const { endsAt, imagePath, speakers, startsAt, title } = this.props;
-    const photoStyle = { backgroundImage: `url('${imagePath}')` };
-
-    return <div className="Talk">
-      <div className="Flex row alignCenter">
-        <div style={photoStyle} title={title} className="Talk-speakerPhoto" />
-        <div className="Flex column alignStart">
-          <div className="Talk-title">{title}</div>
-          <div className="Talk-info">
-            <span className="Talk-speaker">{speakers[0].name}</span>
-            <span className="Talk-twitter">{speakers[0].twitter}</span>
-            <span className="Talk-time">{startsAt} - {endsAt}</span>
-          </div>
-        </div>
-      </div>
-    </div>;
-  }
-
   renderRailsGirlsTalk = () => {
     const data = this.getRailsGirlsData(this.props.talk);
 
@@ -107,7 +88,22 @@ export default class Talk extends Component {
   }
 
   render() {
-    return this.renderRegularTalk();
+    const { endsAt, imagePath, speakers, startsAt, title } = this.props;
+    const photoStyle = { backgroundImage: `url('${imagePath}')` };
+
+    return <div className="Talk">
+      <div className="Flex row alignCenter">
+        <div style={photoStyle} title={title} className="Talk-speakerPhoto" />
+        <div className="Flex column alignStart">
+          <div className="Talk-title">{title}</div>
+          <div className="Talk-info">
+            <span className="Talk-speaker">{speakers[0].name}</span>
+            <span className="Talk-twitter">{speakers[0].twitter}</span>
+            <span className="Talk-time">{startsAt} - {endsAt}</span>
+          </div>
+        </div>
+      </div>
+    </div>;
   }
 
 }
