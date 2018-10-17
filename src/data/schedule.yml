@@ -1,28 +1,28 @@
 - date: 2018-10-18
   events:
-    - name: Check-in
+    - title: Check-in
       start: "9:00"
       end: "9:50"
 
-    - name: Opening
+    - title: Opening
       start: "9:50"
       end: "10:00"
 
-    - name: "Design is a team sport"
+    - title: "Design is a team sport"
       start: "10:00"
       end: "10:45"
       type: talk
       speakers:
         - jmspool
 
-    - name: "TBA"
+    - title: "TBA"
       start: "10:45"
       end: "11:30"
       type: talk
       speakers:
         - sniffles
 
-    - name: Talk Shop
+    - title: Talk Shop
       start: "11:30"
       end: "12:15"
       type: talk-shop
@@ -30,13 +30,13 @@
         - jmspool
         - sniffles
 
-    - name: Coffee Break
+    - title: Coffee Break
       start: "11:30"
       end: "12:15"
       type: coffee-break
       sponsor: xing
 
-    - name: "Hurdles of Junior Developers and How To Overcome Them"
+    - title: "Hurdles of Junior Developers and How To Overcome Them"
       start: "12:15"
       end: "13:00"
       type: talk
@@ -46,18 +46,18 @@
       images:
         - rails-girls
 
-    - name: Lunch
+    - title: Lunch
       start: "13:00"
       end: "15:00"
 
-    - name: "Clarity in Collaboration"
+    - title: "Clarity in Collaboration"
       start: "15:00"
       end: "15:45"
       type: talk
       speakers:
         - arnekittler
 
-    - name: Talk Shop
+    - title: Talk Shop
       start: "15:45"
       end: "16:00"
       type: talk-shop
@@ -69,31 +69,31 @@
         - rails-girls
         - arnekittler
 
-    - name: Break
+    - title: Break
       start: "15:45"
       end: "16:00"
 
-    - name: "Ethics & Power: Understanding the Role of Shame in UX Research"
+    - title: "Ethics & Power: Understanding the Role of Shame in UX Research"
       start: "16:00"
       end: "16:45"
       type: talk
       speakers:
         - vcastillo630
 
-    - name: Coffee Break
+    - title: Coffee Break
       start: "16:45"
       end: "17:15"
       type: coffee-break
       sponsor: xing
 
-    - name: "Even More CSS Secrets"
+    - title: "Even More CSS Secrets"
       start: "17:15"
       end: "18:00"
       type: talk
       speakers:
         - LeaVerou
 
-    - name: Talk Shop
+    - title: Talk Shop
       start: "18:00"
       end: "18:15"
       type: talk-shop
@@ -101,15 +101,15 @@
         - vcastillo630
         - LeaVerou
 
-    - name: Mirror Quiz
+    - title: Mirror Quiz
       start: "18:15"
       end: "19:00"
 
-    - name: Closing
+    - title: Closing
       start: "19:00"
       end: "20:00"
 
-    - name: MirrorConf Party
+    - title: MirrorConf Party
       start: "21:00"
       end: "02:00"
       type: party
@@ -119,29 +119,29 @@
 
 - date: 2018-10-19
   events:
-    - name: Check-in
+    - title: Check-in
       start: "9:00"
       end: "9:50"
 
-    - name: Opening
+    - title: Opening
       start: "9:50"
       end: "10:00"
 
-    - name: TBA
+    - title: TBA
       start: "10:00"
       end: "10:45"
       type: talk
       speakers:
         - smashingmag
 
-    - name: "Preprocessors, Components, and CSS in JS or: How I Learned to Stop Worrying and Love the Website"
+    - title: "Preprocessors, Components, and CSS in JS or: How I Learned to Stop Worrying and Love the Website"
       start: "10:45"
       end: "11:30"
       type: talk
       speaker:
         - jackiebackwards
 
-    - name: Talk Shop
+    - title: Talk Shop
       start: "11:30"
       end: "12:15"
       type: talk-shop
@@ -149,31 +149,31 @@
         - smashingmag
         - jackiebackwards
 
-    - name: Coffee Break
+    - title: Coffee Break
       start: "11:30"
       end: "12:15"
       type: coffee-break
       sponsor: xing
 
-    - name: "Designing Calm Technology"
+    - title: "Designing Calm Technology"
       start: "12:15"
       end: "13:00"
       type: talk
       speakers:
         - caseorganic
 
-    - name: Lunch
+    - title: Lunch
       start: "13:00"
       end: "15:00"
 
-    - name: "Avoid Artic Expeditions: Ways to do research together"
+    - title: "Avoid Artic Expeditions: Ways to do research together"
       start: "15:00"
       end: "15:45"
       type: talk
       speakers:
         - arasb
 
-    - name: Talk Shop
+    - title: Talk Shop
       start: "15:45"
       end: "16:00"
       type: talk-shop
@@ -181,27 +181,27 @@
         - caseorganic
         - arasb
 
-    - name: "Crafting Web Comics with Ember"
+    - title: "Crafting Web Comics with Ember"
       start: "16:00"
       end: "16:45"
       type: talk
       speakers:
         - jjordan_dev
 
-    - name: Coffee Break
+    - title: Coffee Break
       start: "16:45"
       end: "17:15"
       type: coffee-break
       sponsor: xing
 
-    - name: "How to Build an Atomic Bomb"
+    - title: "How to Build an Atomic Bomb"
       start: "17:15"
       end: "18:00"
       type: talk
       speakers:
         - monteiro
 
-    - name: Talk Shop
+    - title: Talk Shop
       start: "18:00"
       end: "18:15"
       type: talk-shop
@@ -209,6 +209,6 @@
         - jjordan_dev
         - monteiro
 
-    - name: Closing
+    - title: Closing
       start: "18:15"
       end: "19:00"

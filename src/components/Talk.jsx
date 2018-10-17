@@ -8,22 +8,14 @@ import Speakers from '../data/speakers.yml';
 
 export default class Talk extends Component {
   static propTypes = {
-    endsAt: PropTypes.object.isRequired,
-    imageUrl: PropTypes.string.isRequired,
+    endsAt: PropTypes.string.isRequired,
+    imagePath: PropTypes.string.isRequired,
     speaker: PropTypes.shape({
       name: PropTypes.string.isRequired,
       twitter: PropTypes.string.isRequired,
     }).isRequired,
-    startsAt: PropTypes.object.isRequired,
+    startsAt: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-  }
-
-  static defaultProps = {
-    talk: null
-  }
-
-  parameterize(string) {
-    return string.toLowerCase().replace(/\s+/g, '-')
   }
 
   getSpeaker(handle) {
@@ -41,7 +33,7 @@ export default class Talk extends Component {
         'Nada_Ashraf96',
         'MayarAlaa122'
       ], this.getSpeaker).map((speaker) => {
-        speaker.imageUrl = `/images/speakers/${speaker.first_name.toLowerCase()}-${speaker.last_name.toLowerCase()}.jpg`;
+        speaker.imagePath = `/images/speakers/${speaker.first_name.toLowerCase()}-${speaker.last_name.toLowerCase()}.jpg`;
         return speaker;
       });
 
@@ -62,7 +54,7 @@ export default class Talk extends Component {
 
     return {
       title: speaker.talk,
-      imageUrl: `/images/speakers/${name}.jpg`,
+      imagePath: `/images/speakers/${name}.jpg`,
       name: `${speaker.first_name} ${speaker.last_name}`,
       twitter: `@${speaker.twitter}`,
       start: talk.start,
@@ -71,8 +63,8 @@ export default class Talk extends Component {
   }
 
   renderRegularTalk = () => {
-    const { endsAt, imageUrl, speaker, startsAt, title } = this.props;
-    const photoStyle = { backgroundImage: `url('${imageUrl}')` };
+    const { endsAt, imagePath, speakers, startsAt, title } = this.props;
+    const photoStyle = { backgroundImage: `url('${imagePath}')` };
 
     return <div className="Talk">
       <div className="Flex row alignCenter">
@@ -80,8 +72,8 @@ export default class Talk extends Component {
         <div className="Flex column alignStart">
           <div className="Talk-title">{title}</div>
           <div className="Talk-info">
-            <span className="Talk-speaker">{speaker.name}</span>
-            <span className="Talk-twitter">{speaker.twitter}</span>
+            <span className="Talk-speaker">{speakers[0].name}</span>
+            <span className="Talk-twitter">{speakers[0].twitter}</span>
             <span className="Talk-time">{startsAt} - {endsAt}</span>
           </div>
         </div>
@@ -96,7 +88,7 @@ export default class Talk extends Component {
       <div className="Flex row alignCenter">
         <div className="Talk-multiplePhotos">
           {data.speakers.map((speaker) => {
-            return <img key={speaker.twitter} src={speaker.imageUrl} alt={speaker.twitter} className="Talk-speakerPhotoSmall" />
+            return <img key={speaker.twitter} src={speaker.imagePath} alt={speaker.twitter} className="Talk-speakerPhotoSmall" />
           })}
         </div>
         <div className="Flex column alignStart">
@@ -115,11 +107,7 @@ export default class Talk extends Component {
   }
 
   render() {
-    if (this.props.speaker === "girls") {
-      return this.renderRailsGirlsTalk();
-    } else {
-      return this.renderRegularTalk();
-    }
+    return this.renderRegularTalk();
   }
 
 }
