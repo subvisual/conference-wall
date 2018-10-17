@@ -1,12 +1,13 @@
 @import "./style/theme";
 
-$App-bg-color: #081340;
+$App-bg-color-top: #100530;
+$App-bg-color-bottom: #622970;
 
 .App {
   height: 100%;
 
   text-align: center;
-  background-color: $App-bg-color;
+  background: linear-gradient(180deg, $App-bg-color-top, $App-bg-color-bottom);
 
   font-family: $font-family-sans;
   font-size: $font-size-base;
