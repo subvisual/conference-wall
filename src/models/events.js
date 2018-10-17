@@ -1,11 +1,11 @@
 import { getSpeakerBy } from './speakers';
 import { getImagePathFor } from './images';
 
-function getEventImagesPaths(rawEvent) {
+function getEventImagesPaths(rawEvent, speakers) {
   if (rawEvent.images) {
     return rawEvent.images.map(getImagePathFor)
   } else {
-    return rawEvent.speakers.map(s => s.imagePath)
+    return speakers.map(s => s.imagePath)
   }
 }
 
@@ -15,7 +15,7 @@ export function extractEvent(rawEvent) {
   return {
     speakers,
     endsAt: rawEvent.end,
-    imagesPaths: getEventImagesPaths(rawEvent),
+    imagesPaths: getEventImagesPaths(rawEvent, speakers),
     startsAt: rawEvent.start,
     title: rawEvent.title,
     type: rawEvent.type,

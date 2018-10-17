@@ -22,12 +22,14 @@ $Wall-sidebar-width: 30vw;
 }
 
 .Wall-logo {
-  height: $Wall-social-height * .4;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: .3 * $Wall-social-height;
+  min-height: 80px;
 
   img {
-    height: 60px;
+    width: 90%;
   }
 }
 

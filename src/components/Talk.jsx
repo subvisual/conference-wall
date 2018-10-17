@@ -27,9 +27,10 @@ export default class Talk extends Component {
     return <div key={idx} style={photoStyle} title={this.props.title} className="Talk-speakerPhoto" />
   }
 
-  renderSpeakerName = (speaker) => <span className="Talk-speakerName">{speaker.name}</span>
-
-  renderSpeakerTwitter = (speaker) => <span className="Talk-speakerTwitter">{speaker.twitter}</span>
+  renderSpeaker = (speaker, idx) => <div key={idx} className="Talk-speaker">
+    <span className="Talk-speakerName">{speaker.name}</span>
+    <span className="Talk-speakerTwitter">{speaker.twitter}</span>
+  </div>
 
   render() {
     const { endsAt, imagesPaths, speakers, startsAt, title } = this.props;
@@ -40,9 +41,8 @@ export default class Talk extends Component {
         <div className="Flex column alignStart">
           <div className="Talk-title">{title}</div>
           <div className="Talk-info">
-            <div className="Talk-speakersNames">{this.speakersNames}</div>
-            <div className="Talk-speakersTwitters">
-              {speakers.map(this.renderSpeakerTwitter)}
+            <div className="Talk-speakers">
+              {speakers.map(this.renderSpeaker)}
             </div>
             <span className="Talk-time">{startsAt} - {endsAt}</span>
           </div>

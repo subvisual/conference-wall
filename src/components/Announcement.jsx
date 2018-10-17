@@ -38,7 +38,7 @@ export default class Announcement extends Component {
 
   atInterval = () => {
     this.setState({
-      currentTalk: extractEvent(Schedule[0].events[6]),
+      currentTalk: extractEvent(Schedule[0].events[2]),
       upcomingTalk: extractEvent(Schedule[0].events[3]),
       counter: (this.state.counter + 1) % 3,
     });
@@ -85,8 +85,6 @@ export default class Announcement extends Component {
 
   renderCurrentTalk = () => {
     if (!this.state.currentTalk) return
-
-    console.log("Current talk:", this.state.currentTalk)
 
     return <div className="Announcement-talk">
       <div key="currentTalk" className="Announcement-header">Now on stage</div>
