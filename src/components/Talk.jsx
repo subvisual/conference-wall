@@ -17,6 +17,10 @@ export default class Talk extends Component {
     title: PropTypes.string.isRequired,
   }
 
+  get speakersNames () {
+    return this.props.speakers.map(s => s.name).join(', ');
+  }
+
   renderImage = (imagePath, idx) => {
     const photoStyle = { backgroundImage: `url('${imagePath}')` };
 
@@ -36,9 +40,7 @@ export default class Talk extends Component {
         <div className="Flex column alignStart">
           <div className="Talk-title">{title}</div>
           <div className="Talk-info">
-            <div className="Talk-speakersNames">
-              {speakers.map(this.renderSpeakerName)}
-            </div>
+            <div className="Talk-speakersNames">{this.speakersNames}</div>
             <div className="Talk-speakersTwitters">
               {speakers.map(this.renderSpeakerTwitter)}
             </div>
