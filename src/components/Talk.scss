@@ -30,7 +30,7 @@
 
 .Talk-title {
   font-family: clip;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   color: #ffcff7;
   margin-bottom: 20px;
@@ -48,14 +48,14 @@
   display: inline-block;
 
   &:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 
 .Talk-speakerName {
   display: block;
   font-family: still-time;
-  font-size: 36px;
+  font-size: 32px;
   color: #fad691;
   text-shadow: 0 0 20px #fad691;
 }
