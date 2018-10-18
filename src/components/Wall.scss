@@ -25,7 +25,7 @@ $Wall-sidebar-width: 30vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: .3 * $Wall-social-height;
+  height: .3 * $Wall-social-height;
   min-height: 80px;
 
   img {
