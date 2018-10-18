@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
 import _ from 'lodash';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 import './Announcement.scss';
 
-import Schedule from '../data/schedule.yml';
 import { getCurrentTalk, getUpcomingTalk } from '../models/schedule'
 import Tweet from './Tweet';
 import Talk from './Talk';
@@ -40,45 +38,6 @@ export default class Announcement extends Component {
       currentTalk: getCurrentTalk(),
       upcomingTalk: getUpcomingTalk(),
       counter: (this.state.counter + 1) % 3,
-    });
-  }
-
-  get today() {
-    return _.find(Schedule, {
-      date: moment().format('dddd, MMMM Do')
-    });
-  }
-
-  findTalk = (tester) => {
-    if (!this.today) {
-      return;
-    }
-
-    return _.find(this.today.events, (event) => {
-      if (event.type === "talk" && tester(event)) {
-        return event;
-      }
-    });
-  }
-
-  getCurrentTalk() {
-    return this.findTalk((talk) => {
-      const talkStartTimestamp = moment(talk.start, "H:mm").unix();
-      const talkEndTimestamp = moment(talk.end, "H:mm").unix();
-      const startDifference = moment().unix() - talkStartTimestamp;
-      const endDifference =talkEndTimestamp - moment().unix();
-
-      return (startDifference > 0 && endDifference   > 0) ||
-             (startDifference < 0 && startDifference > -(1 * 60)) ||
-             (endDifference   < 0 && endDifference   > -(1 * 60));
-    });
-  }
-
-  getUpcomingTalk = () => {
-    return this.findTalk((talk) => {
-      const talkStartTimestamp = moment(talk.start, "H:mm").unix();
-      const difference = talkStartTimestamp - moment().unix();
-      return difference > 0 && difference < (15 * 60);
     });
   }
 
