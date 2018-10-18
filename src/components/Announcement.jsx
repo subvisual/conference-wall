@@ -6,11 +6,11 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 import './Announcement.scss';
 
+import Schedule from '../data/schedule.yml';
 import { extractEvent } from '../models/events'
+import { getCurrentTalk } from '../models/schedule'
 import Tweet from './Tweet';
 import Talk from './Talk';
-
-import Schedule from '../data/schedule.yml';
 
 export default class Announcement extends Component {
   static propTypes = {
@@ -38,7 +38,7 @@ export default class Announcement extends Component {
 
   atInterval = () => {
     this.setState({
-      currentTalk: extractEvent(this.getCurrentTalk()),
+      currentTalk: getCurrentTalk(),
       upcomingTalk: extractEvent(this.getUpcomingTalk()),
       counter: (this.state.counter + 1) % 3,
     });
