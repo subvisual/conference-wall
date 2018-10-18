@@ -55,15 +55,18 @@
 .Talk-speakerName {
   display: block;
   font-family: still-time;
-  font-size: 30px;
-  color: #fd7d57;
+  font-size: 36px;
+  color: #fad691;
+  text-shadow: 0 0 20px #fad691;
 }
 
 .Talk-speakerTwitter {
   display: block;
-  font-size: 30px;
-  color: #fa2471;
-  font-weight: bold;
+  font-family: clip;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fad691;
+  text-shadow: 0 0 5px #fad691;
 }
 
 .Talk-time {
